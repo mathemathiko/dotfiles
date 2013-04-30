@@ -1,4 +1,0 @@
-dotfiles
-========
-
-My own dotfiles.
