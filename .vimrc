@@ -60,8 +60,14 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'kg8m/moin.vim'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'kg8m/vim-rubytest'
+NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+NeoBundle 'mattn/zencoding-vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
