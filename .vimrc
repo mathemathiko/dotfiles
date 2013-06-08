@@ -57,6 +57,7 @@ NeoBundle 'Shougo/vimproc'
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
+NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
