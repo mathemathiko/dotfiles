@@ -11,26 +11,25 @@ set encoding=utf-8
 set fileencoding=utf-8
 hi CursorLine guifg=NONE guibg=#505050
 
-" vi との互換性OFF
-" set nocompatible
-" 
+syntax on
+set showmatch
+set showmode
+set showcmd
+set title
+set ruler
+set cmdheight=2
+set laststatus=2
+
 " " ファイル形式の検出を無効にする
 " filetype off
-" 
-" " Vundle を初期化して
-" " Vundle 自身も Vundle で管理
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc()
-" 
-" " Bundle 'gmarik/vundle'
-" " Bundle 'altercation/vim-colors-solarized'
-" 
+
 syntax enable
 " set background=dark
 " light にしたければ下
 " " set background=light
 set t_Co=256
 
+set nocompatible               " Be iMproved
 
 """"""""""""""""""""""
 "" color
@@ -43,13 +42,6 @@ colorscheme molokai
 " colorscheme hybrid
 " colorscheme railscasts
 " colorscheme rdark
-
-
-""""""""""""""""""""""
-"" unite.vim
-""""""""""""""""""""""
-
-set nocompatible               " Be iMproved
 
 
 """"""""""""""""""""""
@@ -97,7 +89,6 @@ NeoBundle 'git://git.wincent.com/command-t.git'
 " Non git repos
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
-" ...
 
 filetype plugin indent on     " Required!
 "
@@ -139,15 +130,3 @@ nmap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 map ; :
 map j gj
 map k gk
-
-""""""""""""""""""""""
-""その他見た目
-""""""""""""""""""""""
-syntax on "強調表示オン
-set showmatch
-set showmode
-set showcmd
-set title
-set ruler
-set cmdheight=2
-set laststatus=2
