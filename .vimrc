@@ -42,10 +42,9 @@ colorscheme molokai
 """"""""""""""""""""""
 
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/neobundle.vim.git
+  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
-
-call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
