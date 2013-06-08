@@ -38,6 +38,42 @@ colorscheme molokai
 
 
 """"""""""""""""""""""
+"" search
+""""""""""""""""""""""
+
+set hlsearch
+set noignorecase
+
+set wildmenu
+set incsearch
+
+
+""""""""""""""""""""""
+"" space
+""""""""""""""""""""""
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set backspace=1
+set backspace=start,eol,indent
+set autoindent
+
+
+""""""""""""""""""""""
+"" key binding
+""""""""""""""""""""""
+
+nmap <Space>. :<C-u>edit $MYVIMRC<Enter>
+nmap <Space>s. :<C-u>source $MYVIMRC<Enter>
+nmap <C-h> :<C-u>help<Space>
+nmap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
+map ; :
+map j gj
+map k gk
+
+
+""""""""""""""""""""""
 "" neobundle
 """"""""""""""""""""""
 
@@ -101,37 +137,26 @@ filetype plugin indent on     " Required!
 
 " Installation check.
 
-""""""""""""""""""""""
-"" search
-""""""""""""""""""""""
 
-set hlsearch
-set noignorecase
-
-set wildmenu
-set incsearch
-
-
-""""""""""""""""""""""
-"" space
-""""""""""""""""""""""
-
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set backspace=1
-set backspace=start,eol,indent
-set autoindent
-
-
-""""""""""""""""""""""
-"" key binding
-""""""""""""""""""""""
-
-nmap <Space>. :<C-u>edit $MYVIMRC<Enter>
-nmap <Space>s. :<C-u>source $MYVIMRC<Enter>
-nmap <C-h> :<C-u>help<Space>
-nmap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
-map ; :
-map j gj
-map k gk
+"" unite.vim {{{
+" The prefix key.
+nnoremap    [unite]   <Nop>
+nmap    <Leader>f [unite]
+ 
+" unite.vim keymap
+" https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
+nnoremap [unite]u  :<C-u>Unite -no-split<Space>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
+nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
+nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
+nnoremap <silent> [unite]r :<C-u>UniteWithBufferDir file<CR>
+nnoremap <silent> ,vr :UniteResume<CR>
+ 
+" vinarise
+let g:vinarise_enable_auto_detect = 1
+ 
+" unite-build map
+nnoremap <silent> ,vb :Unite build<CR>
+nnoremap <silent> ,vcb :Unite build:!<CR>
+nnoremap <silent> ,vch :UniteBuildClearHighlight<CR>
+"" }}}
