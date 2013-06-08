@@ -20,15 +20,8 @@ set ruler
 set cmdheight=2
 set laststatus=2
 
-" " ファイル形式の検出を無効にする
-" filetype off
-
 syntax enable
-" set background=dark
-" light にしたければ下
-" " set background=light
 set t_Co=256
-
 set nocompatible               " Be iMproved
 
 """"""""""""""""""""""
@@ -47,9 +40,6 @@ colorscheme molokai
 """"""""""""""""""""""
 "" neobundle
 """"""""""""""""""""""
-
-" ファイル形式検出、プラグイン、インデントを ON
-filetype plugin indent on
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -84,8 +74,10 @@ NeoBundle 'vol2223/vim-colorblind-colorscheme'
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
+
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
+
 " Non git repos
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
@@ -102,6 +94,7 @@ filetype plugin indent on     " Required!
 """"""""""""""""""""""
 "" search
 """"""""""""""""""""""
+
 set hlsearch
 set noignorecase
 
@@ -112,6 +105,7 @@ set incsearch
 """"""""""""""""""""""
 "" space
 """"""""""""""""""""""
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -123,6 +117,7 @@ set autoindent
 """"""""""""""""""""""
 "" key binding
 """"""""""""""""""""""
+
 nmap <Space>. :<C-u>edit $MYVIMRC<Enter>
 nmap <Space>s. :<C-u>source $MYVIMRC<Enter>
 nmap <C-h> :<C-u>help<Space>
