@@ -97,6 +97,9 @@ NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'ujihisa/unite-font'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'Shougo/neocomplcache'
@@ -159,4 +162,13 @@ let g:vinarise_enable_auto_detect = 1
 nnoremap <silent> ,vb :Unite build<CR>
 nnoremap <silent> ,vcb :Unite build:!<CR>
 nnoremap <silent> ,vch :UniteBuildClearHighlight<CR>
+"" }}}
+
+
+"" unite-colorscheme.vim {{{
+let g:unite_enable_start_insert = 1
+let g:unite_enable_split_vertically = 1
+if globpath(&rtp, 'plugin/unite.vim') != ''
+  nnoremap cs :<C-u>Unite colorscheme font<Cr>
+endif
 "" }}}
