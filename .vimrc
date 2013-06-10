@@ -108,14 +108,16 @@ NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
-" NeoBundle 'kg8m/vim-rubytest'
+NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'thinca/vim-quickrun'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
