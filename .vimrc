@@ -24,6 +24,8 @@ syntax enable
 set t_Co=256
 set nocompatible               " Be iMproved
 
+nnoremap ,r :source ~/.vimrc<CR>
+
 """"""""""""""""""""""
 "" color
 """"""""""""""""""""""
@@ -96,6 +98,8 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'kg8m/svn-diff.vim'
+NeoBundle 'kmnk/vim-unite-svn'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -106,7 +110,9 @@ NeoBundle 'choplin/unite-vim_hacks'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'ujihisa/neco-look'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
 " NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
@@ -115,6 +121,9 @@ NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'ornicar/vim-mru'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -151,15 +160,25 @@ filetype plugin indent on     " Required!
  
 " unite.vim keymap
 " https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
-" nnoremap [unite]u  :<C-u>Unite -no-split<Space>
-" nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
-" nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
-" nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
-" nnoremap <silent> [unite]r :<C-u>UniteWithBufferDir file<CR>
-" nnoremap <silent> ,vr :UniteResume<CR>
+nnoremap [unite]u  :<C-u>Unite -no-split<Space>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
+nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
+nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
+nnoremap <silent> [unite]r :<C-u>UniteWithBufferDir file<CR>
+nnoremap <silent> ,vr :UniteResume<CR>
+noremap :ub :Unite buffer -buffer-name=buffer
+noremap :uc :Unite colorscheme -auto-preview
+noremap :ud :Unite directory -buffer-name=directory
+noremap :uf :Unite file -buffer-name=file
+noremap :ufr :Unite file_rec -buffer-name=file_rec
+noremap :um :Unite file_mru -buffer-name=file_mru
+noremap :uy :Unite history/yank -buffer-name=file_mru
  
 " vinarise
-" let g:vinarise_enable_auto_detect = 1
+let g:vinarise_enable_auto_detect = 1
+
+" yank history
+let g:unite_source_history_yank_enable =1
  
 " unite-build map
 " nnoremap <silent> ,vb :Unite build<CR>
@@ -170,8 +189,40 @@ filetype plugin indent on     " Required!
 
 "" unite-colorscheme.vim {{{
 " let g:unite_enable_start_insert = 1
-" let g:unite_enable_split_vertically = 1
-" if globpath(&rtp, 'plugin/unite.vim') != ''
-"   nnoremap cs :<C-u>Unite colorscheme font<Cr>
-" endif
+let g:unite_enable_split_vertically = 1
+if globpath(&rtp, 'plugin/unite.vim') != ''
+  nnoremap cs :<C-u>Unite colorscheme font<Cr>
+endif
+"" }}}
+
+
+"" quickrun.vim {{{
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+"" }}}
+
+
+"" neocomplcache.vim {{{
+let g:neocomplcache_enable_at_startup = 1
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
+hi Pmenu ctermbg=8
+hi PmenuSel ctermbg=11 ctermfg=0
+hi PmenuSbar ctermbg=0
+set pumheight=20
+let g:rails_level = 4
+let g:Align_xstrlen = 3
+"" }}}
+
+
+"" nerdcommenter {{{
+noremap <Leader>x ,c<space>
+
+" http://qiita.com/items/2317
+let NERDSpaceDelims = 1
+nmap ,, <Plug>NERDCommenterToggle
+vmap ,, <Plug>NERDCommenterToggle
+"" }}}
+
+
+"" rails.vim {{{
+let g:rails_default_database="mysql"
 "" }}}
