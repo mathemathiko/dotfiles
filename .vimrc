@@ -24,6 +24,8 @@ syntax enable
 set t_Co=256
 set nocompatible               " Be iMproved
 
+nnoremap ,r :source ~/.vimrc<CR>
+
 """"""""""""""""""""""
 "" color
 """"""""""""""""""""""
@@ -121,6 +123,7 @@ NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -200,4 +203,21 @@ let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
 
 "" neocomplcache.vim {{{
 let g:neocomplcache_enable_at_startup = 1
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
+hi Pmenu ctermbg=8
+hi PmenuSel ctermbg=11 ctermfg=0
+hi PmenuSbar ctermbg=0
+set pumheight=20
+let g:rails_level = 4
+let g:Align_xstrlen = 3
+"" }}}
+
+
+"" nerdcommenter {{{
+noremap <Leader>x ,c<space>
+"" }}}
+
+
+"" rails.vim {{{
+let g:rails_default_database="mysql"
 "" }}}
