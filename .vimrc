@@ -107,10 +107,11 @@ NeoBundle 'choplin/unite-vim_hacks'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'ujihisa/neco-look'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'kg8m/vim-rubytest'
+" NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -177,4 +178,14 @@ let g:unite_enable_split_vertically = 1
 if globpath(&rtp, 'plugin/unite.vim') != ''
   nnoremap cs :<C-u>Unite colorscheme font<Cr>
 endif
+"" }}}
+
+
+"" quickrun.vim {{{
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+"" }}}
+
+
+"" neocomplcache.vim {{{
+let g:neocomplcache_enable_at_startup = 1
 "" }}}
