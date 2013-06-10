@@ -215,6 +215,11 @@ let g:Align_xstrlen = 3
 
 "" nerdcommenter {{{
 noremap <Leader>x ,c<space>
+
+" http://qiita.com/items/2317
+let NERDSpaceDelims = 1
+nmap ,, <Plug>NERDCommenterToggle
+vmap ,, <Plug>NERDCommenterToggle
 "" }}}
 
 
