@@ -163,10 +163,12 @@ nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
 nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
 nnoremap <silent> [unite]r :<C-u>UniteWithBufferDir file<CR>
 nnoremap <silent> ,vr :UniteResume<CR>
-noremap :um :Unite file_mru -buffer-name=file_mru
+noremap :ub :Unite buffer -buffer-name=buffer
+noremap :uc :Unite colorscheme -auto-preview
 noremap :ud :Unite directory -buffer-name=directory
 noremap :uf :Unite file -buffer-name=file
 noremap :ufr :Unite file_rec -buffer-name=file_rec
+noremap :um :Unite file_mru -buffer-name=file_mru
  
 " vinarise
 let g:vinarise_enable_auto_detect = 1
