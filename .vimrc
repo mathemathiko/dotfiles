@@ -142,7 +142,6 @@ NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
-NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Townk/vim-autoclose'
 
 " plugins from vim.org
@@ -238,16 +237,6 @@ hi PmenuSbar ctermbg=0
 set pumheight=20
 let g:rails_level = 4
 let g:Align_xstrlen = 3
-"" }}}
-
-
-"" nerdcommenter {{{
-" noremap <Leader>x ,c<space>
-
-" http://qiita.com/items/2317
-" let NERDSpaceDelims = 1
-" nmap ,, <Plug>NERDCommenterToggle
-" vmap ,, <Plug>NERDCommenterToggle
 "" }}}
 
 
