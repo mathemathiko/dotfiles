@@ -143,6 +143,8 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
 NeoBundle 'scrooloose/nerdcommenter'
+" NeoBundle 'hrp/EnhancedCommentify'
+NeoBundle 'Townk/vim-autoclose'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
