@@ -174,9 +174,52 @@ filetype plugin indent on     " Required!
 
 " Installation check.
 
+
 " EnhCommentify "{{{
 let g:EnhCommentifyBindInInsert = 'no'
 " }}}
+
+
+"" neocomplcache.vim {{{
+let g:neocomplcache_enable_at_startup = 1
+" imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
+hi Pmenu ctermbg=8
+hi PmenuSel ctermbg=11 ctermfg=0
+hi PmenuSbar ctermbg=0
+set pumheight=20
+let g:rails_level = 4
+let g:Align_xstrlen = 3
+"" }}}
+
+
+"" quickrun.vim {{{
+let g:quickrun_config = {}
+let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+let g:quickrun_config._ = {'runner' : 'vimproc'}
+"" }}}
+
+
+"" rails.vim {{{
+let g:rails_default_database="mysql"
+"" }}}
+
+
+"" ruby-test.vim {{{
+let g:no_rubytest_mappings="\""
+let g:rubytest_cmd_test = "ruby %p"
+let g:rubytest_cmd_testcase = "ruby %p -n %c"
+"" }}}
+
+
+"" svn-diff.vim {{{
+nmap ,d :call SVNDiff()<CR>
+function! SVNDiff()
+  edit diff
+  silent! setlocal ft=diff nobackup noswf buftype=nofile
+  execute "normal :r!LANG=ja_JP.UTF8 svn diff\n"
+  goto 1
+endfunction
+"" }}}
 
 "" unite.vim {{{
 " The prefix key.
@@ -218,46 +261,4 @@ let g:unite_enable_split_vertically = 1
 if globpath(&rtp, 'plugin/unite.vim') != ''
   nnoremap cs :<C-u>Unite colorscheme font<Cr>
 endif
-"" }}}
-
-
-"" quickrun.vim {{{
-let g:quickrun_config = {}
-let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
-let g:quickrun_config._ = {'runner' : 'vimproc'}
-"" }}}
-
-
-"" neocomplcache.vim {{{
-let g:neocomplcache_enable_at_startup = 1
-" imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
-hi Pmenu ctermbg=8
-hi PmenuSel ctermbg=11 ctermfg=0
-hi PmenuSbar ctermbg=0
-set pumheight=20
-let g:rails_level = 4
-let g:Align_xstrlen = 3
-"" }}}
-
-
-"" rails.vim {{{
-let g:rails_default_database="mysql"
-"" }}}
-
-
-"" ruby-test.vim {{{
-let g:no_rubytest_mappings="\""
-let g:rubytest_cmd_test = "ruby %p"
-let g:rubytest_cmd_testcase = "ruby %p -n %c"
-"" }}}
-
-
-"" svn-diff.vim {{{
-nmap ,d :call SVNDiff()<CR>
-function! SVNDiff()
-  edit diff
-  silent! setlocal ft=diff nobackup noswf buftype=nofile
-  execute "normal :r!LANG=ja_JP.UTF8 svn diff\n"
-  goto 1
-endfunction
 "" }}}
