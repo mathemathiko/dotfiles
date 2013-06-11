@@ -89,7 +89,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+  \     'windows' : 'make -f make_mingw32.mak',
+  \     'cygwin'  : 'make -f make_cygwin.mak',
+  \     'mac'     : 'make -f make_mac.mak',
+  \     'unix'    : 'make -f make_unix.mak',
+  \   },
+  \ }
 
 " My Bundles here:
 "
@@ -197,7 +204,9 @@ endif
 
 
 "" quickrun.vim {{{
+let g:quickrun_config = {}
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+let g:quickrun_config._ = {'runner' : 'vimproc'}
 "" }}}
 
 
