@@ -143,6 +143,7 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
 NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'mathemathiko/vim-rails'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -153,7 +154,6 @@ NeoBundle 'vol2223/vim-colorblind-colorscheme'
 " vim-scripts repos
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
-NeoBundle 'rails.vim'
 NeoBundle 'EnhCommentify.vim'
 
 " Non github repos
@@ -185,7 +185,6 @@ hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=11 ctermfg=0
 hi PmenuSbar ctermbg=0
 set pumheight=20
-let g:rails_level = 4
 let g:Align_xstrlen = 3
 "" }}}
 
@@ -197,8 +196,38 @@ let g:quickrun_config._ = {'runner' : 'vimproc'}
 "" }}}
 
 
-"" rails.vim {{{
+"" vim-rails {{{
+" http://fg-180.katamayu.net/archives/2006/09/02/125150
 let g:rails_default_database="mysql"
+autocmd FileType ruby set path+=test/lib
+let g:rails_level = 4
+let g:rails_projections = {
+  \   "app/controllers/shared/*.rb": {
+  \     "test": [
+  \       "test/functional/shared/%s_test.rb",
+  \       "test/functional/shared/%s_tests.rb",
+  \     ],
+  \   },
+  \   "app/helpers/*_builder.rb": {
+  \     "command": "helper",
+  \   },
+  \   "app/models/finder/*_finder.rb": {
+  \     "command": "finder",
+  \     "test": [
+  \       "test/unit/%s_finder_test.rb",
+  \     ]
+  \   },
+  \   "spec/fabricators/*_fabricator.rb": {
+  \     "command": "fabricator",
+  \     "affinity": "model",
+  \     "alternate": "app/models/%s.rb",
+  \     "related": "db/schema.rb#%p",
+  \     "test": "spec/models/%s_spec.rb",
+  \   },
+  \   "spec/support/*.rb": {
+  \     "command": "support",
+  \   },
+  \ }
 "" }}}
 
 
