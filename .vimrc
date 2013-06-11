@@ -143,8 +143,10 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
 NeoBundle 'scrooloose/nerdcommenter'
-" NeoBundle 'hrp/EnhancedCommentify'
 NeoBundle 'Townk/vim-autoclose'
+
+" plugins from vim.org
+NeoBundle 'EnhCommentify.vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -173,6 +175,9 @@ filetype plugin indent on     " Required!
 
 " Installation check.
 
+" EnhCommentify "{{{
+let g:EnhCommentifyBindInInsert = 'no'
+" }}}
 
 "" unite.vim {{{
 " The prefix key.
@@ -237,12 +242,12 @@ let g:Align_xstrlen = 3
 
 
 "" nerdcommenter {{{
-noremap <Leader>x ,c<space>
+" noremap <Leader>x ,c<space>
 
 " http://qiita.com/items/2317
-let NERDSpaceDelims = 1
-nmap ,, <Plug>NERDCommenterToggle
-vmap ,, <Plug>NERDCommenterToggle
+" let NERDSpaceDelims = 1
+" nmap ,, <Plug>NERDCommenterToggle
+" vmap ,, <Plug>NERDCommenterToggle
 "" }}}
 
 
