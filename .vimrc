@@ -162,8 +162,8 @@ filetype plugin indent on     " Required!
 
 "" unite.vim {{{
 " The prefix key.
-nnoremap    [unite]   <Nop>
-nmap    <Leader>f [unite]
+" nnoremap    [unite]   <Nop>
+" nmap    <Leader>f [unite]
  
 " unite.vim keymap
 " https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
@@ -188,9 +188,9 @@ let g:vinarise_enable_auto_detect = 1
 let g:unite_source_history_yank_enable =1
  
 " unite-build map
-nnoremap <silent> ,vb :Unite build<CR>
-nnoremap <silent> ,vcb :Unite build:!<CR>
-nnoremap <silent> ,vch :UniteBuildClearHighlight<CR>
+" nnoremap <silent> ,vb :Unite build<CR>
+" nnoremap <silent> ,vcb :Unite build:!<CR>
+" nnoremap <silent> ,vch :UniteBuildClearHighlight<CR>
 "" }}}
 
 
