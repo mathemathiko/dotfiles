@@ -7,11 +7,13 @@ set whichwrap=b,s,h,l,>,[,]
 set ai
 set cursorline
 set cursorcolumn
+set notextmode
 set encoding=utf-8
 set fileencoding=utf-8
 hi CursorLine guifg=NONE guibg=#505050
 
 syntax on
+set matchpairs=(:),{:},[:],<:>,":",':'
 set showmatch
 set showmode
 set showcmd
@@ -60,6 +62,15 @@ set expandtab
 set backspace=1
 set backspace=start,eol,indent
 set autoindent
+set smartindent
+
+
+""""""""""""""""""""""
+"" status line
+""""""""""""""""""""""
+
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+highlight Visual ctermbg=gray
 
 
 """"""""""""""""""""""
@@ -244,3 +255,13 @@ let g:rubytest_cmd_test = "ruby %p"
 let g:rubytest_cmd_testcase = "ruby %p -n %c"
 "" }}}
 
+
+"" svn-diff.vim {{{
+nmap ,d :call SVNDiff()<CR>
+function! SVNDiff()
+  edit diff
+  silent! setlocal ft=diff nobackup noswf buftype=nofile
+  execute "normal :r!LANG=ja_JP.UTF8 svn diff\n"
+  goto 1
+endfunction
+"" }}}
