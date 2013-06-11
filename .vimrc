@@ -144,9 +144,6 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
 NeoBundle 'Townk/vim-autoclose'
 
-" plugins from vim.org
-NeoBundle 'EnhCommentify.vim'
-
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomasr/molokai'
@@ -157,6 +154,7 @@ NeoBundle 'vol2223/vim-colorblind-colorscheme'
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
+NeoBundle 'EnhCommentify.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
