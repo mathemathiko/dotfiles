@@ -122,7 +122,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
-" NeoBundle 'kg8m/vim-rubytest'
+NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -213,7 +213,7 @@ let g:quickrun_config._ = {'runner' : 'vimproc'}
 
 "" neocomplcache.vim {{{
 let g:neocomplcache_enable_at_startup = 1
-imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
+" imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
 hi Pmenu ctermbg=8
 hi PmenuSel ctermbg=11 ctermfg=0
 hi PmenuSbar ctermbg=0
@@ -236,3 +236,11 @@ vmap ,, <Plug>NERDCommenterToggle
 "" rails.vim {{{
 let g:rails_default_database="mysql"
 "" }}}
+
+
+"" ruby-test.vim {{{
+let g:no_rubytest_mappings="\""
+let g:rubytest_cmd_test = "ruby %p"
+let g:rubytest_cmd_testcase = "ruby %p -n %c"
+"" }}}
+
