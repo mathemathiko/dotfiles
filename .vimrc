@@ -248,6 +248,7 @@ function! SVNDiff()
 endfunction
 "" }}}
 
+
 "" unite.vim {{{
 " The prefix key.
 " nnoremap    [unite]   <Nop>
