@@ -147,7 +147,7 @@ NeoBundle 'mathemathiko/vim-rails'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
-NeoBundle 'kg8m/molokai'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'vol2223/vim-colorblind-colorscheme'
 
