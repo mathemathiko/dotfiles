@@ -188,6 +188,12 @@ let g:EnhCommentifyBindInInsert = 'no'
 " }}}
 
 
+" vim-markdown "{{{
+let g:vim_markdown_folding_disabled=1
+" }}}
+"
+
+
 " moin.vim "{{{
 au BufNewFile,BufRead *.moin setf moin
 au BufNewFile,BufRead *.trac setf moin
