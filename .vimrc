@@ -188,6 +188,12 @@ let g:EnhCommentifyBindInInsert = 'no'
 " }}}
 
 
+" moin.vim "{{{
+au BufNewFile,BufRead *.moin setf moin
+au BufNewFile,BufRead *.trac setf moin
+" }}}
+"
+
 "" neocomplcache.vim {{{
 let g:neocomplcache_enable_at_startup = 1
 " imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
