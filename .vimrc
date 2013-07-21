@@ -53,6 +53,13 @@ set incsearch
 
 
 """"""""""""""""""""""
+"" folding
+""""""""""""""""""""""
+
+set foldlevel=100
+
+
+""""""""""""""""""""""
 "" space
 """"""""""""""""""""""
 
@@ -81,6 +88,16 @@ nmap <Space>. :<C-u>edit $MYVIMRC<Enter>
 nmap <Space>s. :<C-u>source $MYVIMRC<Enter>
 nmap <C-h> :<C-u>help<Space>
 nmap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
+
+" http://ivxi.hatenablog.com/entry/2013/05/23/163825
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <silent>bb :b#<CR>
+nnoremap <silent>bf :bf<CR>
+nnoremap <silent>bl :bl<CR>
+nnoremap <silent>bm :bm<CR>
+nnoremap <silent>bd :bdelete<CR>
+
 map ; :
 map j gj
 map k gk
@@ -179,6 +196,19 @@ filetype plugin indent on     " Required!
 " EnhCommentify "{{{
 let g:EnhCommentifyBindInInsert = 'no'
 " }}}
+
+
+" vim-markdown "{{{
+let g:vim_markdown_folding_disabled=1
+" }}}
+"
+
+
+" moin.vim "{{{
+au BufNewFile,BufRead *.moin setf moin
+au BufNewFile,BufRead *.trac setf moin
+" }}}
+"
 
 
 "" neocomplcache.vim {{{
