@@ -165,7 +165,7 @@ NeoBundle 'mathemathiko/vim-rails'
 " NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/vim-powerline'
 " NeoBundle 'milkbikis/powerline-shell'
-NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
+" NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -177,6 +177,7 @@ NeoBundle 'vol2223/vim-colorblind-colorscheme'
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
+NeoBundle 'taglist.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
