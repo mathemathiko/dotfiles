@@ -144,6 +144,9 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ornicar/vim-mru'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'mathemathiko/vim-rails'
+" NeoBundle 'alpaca-tc/alpaca_powertabline'
+" NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+NeoBundle 'Lokaltog/vim-powerline'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
