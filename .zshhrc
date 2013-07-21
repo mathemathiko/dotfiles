@@ -69,3 +69,6 @@ setopt nonomatch
 # 
 # install_powerline_precmd 
 # }}}
+
+alias td='tmux detach'
+alias ta='tmux attach'
