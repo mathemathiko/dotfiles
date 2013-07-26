@@ -178,6 +178,7 @@ NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
 " NeoBundle 'taglist.vim'
+NeoBundle 'sudo.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
