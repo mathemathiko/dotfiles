@@ -164,6 +164,7 @@ NeoBundle 'mathemathiko/vim-rails'
 " NeoBundle 'alpaca-tc/alpaca_powertabline'
 " NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'milkbikis/powerline-shell'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 
