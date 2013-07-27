@@ -92,7 +92,7 @@ nmap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 " http://ivxi.hatenablog.com/entry/2013/05/23/163825
 nnoremap <silent>bp :bprevious<CR>
 nnoremap <silent>bn :bnext<CR>
-nnoremap <silent>bb :b#<CR>
+nnoremap <silent>bv :b#<CR>
 nnoremap <silent>bf :bf<CR>
 nnoremap <silent>bl :bl<CR>
 nnoremap <silent>bm :bm<CR>
