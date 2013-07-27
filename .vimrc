@@ -227,6 +227,11 @@ let g:Align_xstrlen = 3
 "" }}}
 
 
+"" powerline {{{
+let g:Powerline_symbols = 'fancy'
+"" }}}
+
+
 "" quickrun.vim {{{
 let g:quickrun_config = {}
 let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
