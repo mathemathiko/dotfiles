@@ -81,6 +81,13 @@ highlight Visual ctermbg=gray
 
 
 """"""""""""""""""""""
+"" tmux
+""""""""""""""""""""""
+
+set clipboard+=unnamed
+set clipboard+=autoselect
+
+""""""""""""""""""""""
 "" key binding
 """"""""""""""""""""""
 
