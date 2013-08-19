@@ -175,6 +175,7 @@ NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'milkbikis/powerline-shell'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'thinca/vim-qfreplace'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
