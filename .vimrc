@@ -161,7 +161,6 @@ NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'thinca/vim-quickrun'
@@ -176,6 +175,7 @@ NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
+NeoBundle 'mattn/emmet-vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
