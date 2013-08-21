@@ -185,7 +185,7 @@ NeoBundle 'vol2223/vim-colorblind-colorscheme'
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
-" NeoBundle 'taglist.vim'
+NeoBundle 'taglist.vim'
 NeoBundle 'sudo.vim'
 
 " Non github repos
