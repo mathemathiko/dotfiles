@@ -175,7 +175,8 @@ NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
-NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mattn/zencoding-vim'
+" NeoBundle 'mattn/emmet-vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
