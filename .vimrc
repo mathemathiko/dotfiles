@@ -190,6 +190,7 @@ NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
 NeoBundle 'taglist.vim'
 NeoBundle 'sudo.vim'
+" NeoBundle 'buftabs'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
@@ -206,6 +207,17 @@ filetype plugin indent on     " Required!
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
 " Installation check.
+
+
+" buftabs "{{{
+" http://qiita.com/naonya3@github/items/4da9ff3e9f19e820026e
+" omit path
+" let g:buftabs_only_basename = 1
+" display in statusline
+" let g:buftabs_in_statusline = 1
+" highlight
+" let g:buftabs_active_highlight_group="Visual"
+" }}}
 
 
 " EnhCommentify "{{{
