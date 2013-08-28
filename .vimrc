@@ -177,6 +177,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'mattn/zencoding-vim'
 " NeoBundle 'mattn/emmet-vim'
+NeoBundle 'hrsh7th/vim-versions'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -337,6 +338,9 @@ noremap :uy :Unite history/yank -buffer-name=file_mru
  
 " vinarise
 let g:vinarise_enable_auto_detect = 1
+
+" vim-versions
+nnoremap <silent> ,uv :<C-u>UniteVersions status:!<CR>
 
 " yank history
 let g:unite_source_history_yank_enable =1
