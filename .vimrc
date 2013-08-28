@@ -178,6 +178,8 @@ NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'mattn/zencoding-vim'
 " NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hrsh7th/vim-versions'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'mattn/webapi-vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -223,6 +225,11 @@ filetype plugin indent on     " Required!
 
 " EnhCommentify "{{{
 let g:EnhCommentifyBindInInsert = 'no'
+" }}}
+
+
+" gundo "{{{
+nnoremap <F5> :GundoToggle<CR>
 " }}}
 
 
