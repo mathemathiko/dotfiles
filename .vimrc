@@ -169,7 +169,7 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'mathemathiko/vim-rails'
 " NeoBundle 'alpaca-tc/alpaca_powertabline'
 " NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
-NeoBundle 'Lokaltog/vim-powerline'
+" NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'milkbikis/powerline-shell'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
@@ -180,6 +180,7 @@ NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'mattn/webapi-vim'
+NeoBundle 'itchyny/lightline.vim'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -233,6 +234,67 @@ nnoremap <F5> :GundoToggle<CR>
 " }}}
 
 
+" lightline "{{{
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'default',
+      \ 'mode_map': { 'c': 'NORMAL' },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \ },
+      \ 'component_function': {
+      \   'modified': 'MyModified',
+      \   'readonly': 'MyReadonly',
+      \   'fugitive': 'MyFugitive',
+      \   'filename': 'MyFilename',
+      \   'fileformat': 'MyFileformat',
+      \   'filetype': 'MyFiletype',
+      \   'fileencoding': 'MyFileencoding',
+      \   'mode': 'MyMode',
+      \ },
+      \ 'separator': { 'left': '⮀', 'right': '⮂' },
+      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ }
+
+function! MyModified()
+  return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+endfunction
+
+function! MyReadonly()
+  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? '⭤' : ''
+endfunction
+
+function! MyFilename()
+  return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() : 
+        \  &ft == 'unite' ? unite#get_status_string() : 
+        \  &ft == 'vimshell' ? vimshell#get_status_string() :
+        \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
+        \ ('' != MyModified() ? ' ' . MyModified() : '')
+endfunction
+
+function! MyFugitive()
+  return &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head') && strlen(fugitive#head()) ? '⭠ '.fugitive#head() : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth('.') > 70 ? &fileformat : ''
+endfunction
+
+function! MyFiletype()
+  return winwidth('.') > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
+endfunction
+
+function! MyFileencoding()
+  return winwidth('.') > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! MyMode()
+  return winwidth('.') > 60 ? lightline#mode() : ''
+endfunction
+" }}}
+
+
 " vim-markdown "{{{
 let g:vim_markdown_folding_disabled=1
 " }}}
@@ -258,7 +320,7 @@ let g:Align_xstrlen = 3
 
 
 "" powerline {{{
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 "" }}}
 
 
