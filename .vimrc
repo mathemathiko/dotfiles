@@ -181,6 +181,7 @@ NeoBundle 'hrsh7th/vim-versions'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
+" NeoBundle 'tpope/vim-endwise'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
