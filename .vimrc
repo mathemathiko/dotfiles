@@ -45,6 +45,8 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme wombat
 colorscheme kolor
 " colorscheme gruvbox
+" colorscheme bubblegum
+" colorscheme lucius
 
 
 """"""""""""""""""""""
@@ -201,6 +203,8 @@ NeoBundle 'Zenburn'
 NeoBundle 'Wombat'
 NeoBundle 'zeis/vim-kolor'
 NeoBundle 'morhetz/gruvbox'
+NeoBundle 'baskerville/bubblegum'
+NeoBundle 'jonathanfilip/vim-lucius'
 
 " vim-scripts repos
 NeoBundle 'L9'
