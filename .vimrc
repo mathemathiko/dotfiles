@@ -191,6 +191,11 @@ NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'tpope/vim-endwise'
 NeoBundle 'osyo-manga/vim-anzu'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'kana/vim-smartchr'
+NeoBundle 'lilydjwg/colorizer'
+NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'vim-ruby/vim-ruby'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -213,6 +218,7 @@ NeoBundle 'EnhCommentify.vim'
 NeoBundle 'taglist.vim'
 NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
+NeoBundle 'teol.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
