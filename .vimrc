@@ -188,6 +188,7 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'tpope/vim-endwise'
+NeoBundle 'osyo-manga/vim-anzu'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -224,6 +225,19 @@ filetype plugin indent on     " Required!
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
 " Installation check.
+
+
+" vim-anzu "{{{
+nmap n <Plug>(anzu-n)
+nmap N <Plug>(anzu-N)
+nmap * <Plug>(anzu-star)
+nmap # <Plug>(anzu-sharp)
+augroup vim-anzu
+" NOT display at particular time
+  autocmd!
+  autocmd CursorHold,CursorHoldI,WinLeave,TabLeave * call anzu#clear_search_status()
+augroup END
+" }}}
 
 
 " buftabs "{{{
@@ -266,7 +280,7 @@ let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified', 'anzu' ] ]
       \ },
       \ 'component_function': {
       \   'modified': 'MyModified',
@@ -277,6 +291,7 @@ let g:lightline = {
       \   'filetype': 'MyFiletype',
       \   'fileencoding': 'MyFileencoding',
       \   'mode': 'MyMode',
+      \   'anzu': 'anzu#search_status',
       \ },
       \ 'separator': { 'left': '⮀', 'right': '⮂' },
       \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
