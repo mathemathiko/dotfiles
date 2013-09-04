@@ -34,11 +34,17 @@ nnoremap ,r :source ~/.vimrc<CR>
 
 " colorscheme delek
 " colorscheme solarized
-colorscheme molokai
+" colorscheme molokai
 " colorscheme jellybeans
 " colorscheme hybrid
 " colorscheme railscasts
 " colorscheme rdark
+" colorscheme vividchalk
+" colorscheme zenburn
+" colorscheme guardian
+" colorscheme wombat
+colorscheme kolor
+" colorscheme gruvbox
 
 
 """"""""""""""""""""""
@@ -188,6 +194,12 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'vol2223/vim-colorblind-colorscheme'
+NeoBundle 'Guardian'
+NeoBundle 'mathemathiko/vim-vividchalk'
+NeoBundle 'Zenburn'
+NeoBundle 'Wombat'
+NeoBundle 'zeis/vim-kolor'
+NeoBundle 'morhetz/gruvbox'
 
 " vim-scripts repos
 NeoBundle 'L9'
@@ -228,6 +240,19 @@ filetype plugin indent on     " Required!
 " EnhCommentify "{{{
 let g:EnhCommentifyBindInInsert = 'no'
 " }}}
+
+
+"" gruvbox {{{
+" map <F5> :call ToggleBg()<CR>
+" function! ToggleBg()
+"     if &background == 'dark'
+"         set bg=light
+"     else
+"         set bg=dark
+"     endif
+" endfunction
+" set bg=dark
+"" }}}
 
 
 " gundo "{{{
