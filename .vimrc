@@ -484,6 +484,7 @@ endif
 
 
 "" unite-outline.vim {{{
+" http://hinagishi.hateblo.jp/entry/2011/11/18/135701
 noremap :uo :Unite -vertical -winwidth=40 -no-quit outline
 "" }}}
 
