@@ -196,6 +196,8 @@ NeoBundle 'kana/vim-smartchr'
 NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'ecomba/vim-ruby-refactoring'
 
 " colorscheme
 NeoBundle 'ujihisa/unite-colorscheme'
