@@ -481,3 +481,32 @@ if globpath(&rtp, 'plugin/unite.vim') != ''
   nnoremap cs :<C-u>Unite colorscheme font<Cr>
 endif
 "" }}}
+
+
+"" unite-outline.vim {{{
+noremap :uo :Unite -vertical -winwidth=40 -no-quit outline
+"" }}}
+
+
+"" unite-rails.vim {{{
+" http://qiita.com/alpaca_taichou/items/ab2ad83ddbaf2f6ce7fb#2-9
+" https://gist.github.com/alpaca-tc/4521467
+function! UniteRailsSetting()
+  nnoremap <buffer><C-H><C-H><C-H> :<C-U>Unite rails/view<CR>
+  nnoremap <buffer><C-H><C-H> :<C-U>Unite rails/model<CR>
+  nnoremap <buffer><C-H> :<C-U>Unite rails/controller<CR>
+   
+  nnoremap <buffer><C-H>c :<C-U>Unite rails/config<CR>
+  nnoremap <buffer><C-H>s :<C-U>Unite rails/spec<CR>
+  nnoremap <buffer><C-H>m :<C-U>Unite rails/db -input=migrate<CR>
+  nnoremap <buffer><C-H>l :<C-U>Unite rails/lib<CR>
+  nnoremap <buffer><expr><C-H>g ':e '.b:rails_root.'/Gemfile<CR>'
+  nnoremap <buffer><expr><C-H>r ':e '.b:rails_root.'/config/routes.rb<CR>'
+  nnoremap <buffer><expr><C-H>se ':e '.b:rails_root.'/db/seeds.rb<CR>'
+  nnoremap <buffer><C-H>ra :<C-U>Unite rails/rake<CR>
+  nnoremap <buffer><C-H>h :<C-U>Unite rails/heroku<CR>
+endfunction
+aug MyAutoCmd
+  au User Rails call UniteRailsSetting()
+aug END
+"" }}}
