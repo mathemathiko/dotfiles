@@ -145,6 +145,7 @@ NeoBundle 'Shougo/vimproc', {
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
+" http://qiita.com/rbtnn/items/600ac451ebb43b2c9c13
 NeoBundleLazy 'Shougo/unite.vim' , {
 \   'autoload' : { 'commands' : [ 'Unite' ] }
 \ }
