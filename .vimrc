@@ -145,24 +145,42 @@ NeoBundle 'Shougo/vimproc', {
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
+NeoBundleLazy 'Shougo/unite.vim' , {
+\   'autoload' : { 'commands' : [ 'Unite' ] }
+\ }
+let s:bundle = neobundle#get('unite.vim')
+function! s:bundle.hooks.on_source(bundle)
+  NeoBundle 'kmnk/vim-unite-svn'
+  NeoBundle 'basyura/unite-rails'
+  NeoBundle 'ujihisa/unite-colorscheme'
+  NeoBundle 'ujihisa/unite-font'
+  NeoBundle 'kannokanno/unite-todo'
+  " NeoBundle 'mattn/unite-advent_calendar'
+  NeoBundle 'choplin/unite-vim_hacks'
+  NeoBundle 'h1mesuke/unite-outline'
+  NeoBundle 'ujihisa/unite-colorscheme'
+endfunction
+" NeoBundle 'Shougo/unite.vim'
+
+NeoBundleLazy 'Shougo/vimshell', {
+\   'autoload' : { 'commands' : [ 'VimShellBufferDir' ] },
+\   'depends': [ 'Shougo/vimproc' ],
+\ }
+let s:bundle = neobundle#get('vimshell')
+function! s:bundle.hooks.on_source(bundle)
+  " write vimshell settings here.
+endfunction
+" NeoBundle 'Shougo/vimshell.vim'
+
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kg8m/svn-diff.vim'
-NeoBundle 'kmnk/vim-unite-svn'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'basyura/unite-rails'
-NeoBundle 'ujihisa/unite-colorscheme'
-NeoBundle 'ujihisa/unite-font'
-NeoBundle 'kannokanno/unite-todo'
-NeoBundle 'mattn/unite-advent_calendar'
-NeoBundle 'choplin/unite-vim_hacks'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
@@ -194,13 +212,11 @@ NeoBundle 'osyo-manga/vim-anzu'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kana/vim-smartchr'
 NeoBundle 'lilydjwg/colorizer'
-NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'ecomba/vim-ruby-refactoring'
 
 " colorscheme
-NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'vol2223/vim-colorblind-colorscheme'
