@@ -173,7 +173,7 @@ function! s:bundle.hooks.on_source(bundle)
 endfunction
 " NeoBundle 'Shougo/vimshell.vim'
 
-if has('lua') && v:version >= 703 && has('patch885')
+if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
   NeoBundle "Shougo/neocomplete"
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 0
@@ -195,7 +195,7 @@ else
   " Set minimum syntax keyword length.
   let g:neocomplcache_min_syntax_length = 3
   let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-end if
+endif
 
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
