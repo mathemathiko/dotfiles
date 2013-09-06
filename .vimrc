@@ -122,6 +122,7 @@ map k gk
 "" browser
 """"""""""""""""""""""
 
+" enable to open browser from vim
 " http://d.hatena.ne.jp/shunsuk/20110508/1304865150
 function! HandleURI()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
