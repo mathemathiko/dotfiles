@@ -122,6 +122,7 @@ map k gk
 "" browser
 """"""""""""""""""""""
 
+" http://d.hatena.ne.jp/shunsuk/20110508/1304865150
 function! HandleURI()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
   echo s:uri
