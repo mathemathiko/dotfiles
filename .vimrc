@@ -173,13 +173,36 @@ function! s:bundle.hooks.on_source(bundle)
 endfunction
 " NeoBundle 'Shougo/vimshell.vim'
 
+if has('lua') && v:version >= 703 && has('patch885')
+  NeoBundle "Shougo/neocomplete"
+  " Disable AutoComplPop.
+  let g:acp_enableAtStartup = 0
+  " Use neocomplete.
+  let g:neocomplete#enable_at_startup = 1
+  " Use smartcase.
+  let g:neocomplete#enable_smart_case = 1
+  " Set minimum syntax keyword length.
+  let g:neocomplete#sources#syntax#min_keyword_length = 3
+  let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+else
+  NeoBundle 'Shougo/neocomplcache'
+  " Disable AutoComplPop.
+  let g:acp_enableAtStartup = 0
+  " Use neocomplcache.
+  let g:neocomplcache_enable_at_startup = 1
+  " Use smartcase.
+  let g:neocomplcache_enable_smart_case = 1
+  " Set minimum syntax keyword length.
+  let g:neocomplcache_min_syntax_length = 3
+  let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+end if
+
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kg8m/svn-diff.vim'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'tpope/vim-surround'
