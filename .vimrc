@@ -298,6 +298,10 @@ filetype plugin indent on     " Required!
 " Installation check.
 
 
+""""""""""""""""""""""
+"" plugin
+""""""""""""""""""""""
+
 " vim-anzu "{{{
 nmap n <Plug>(anzu-n)
 nmap N <Plug>(anzu-N)
