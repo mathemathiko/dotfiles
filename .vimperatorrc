@@ -2,9 +2,10 @@
 " basic
 "+---------------------------------+
 
-" colorscheme solarized
+colorscheme solarized
 " http://d.hatena.ne.jp/blooo/20100121/1264058591
-colorscheme sweets_snaka
+" colorscheme sweets_snaka
+" colorscheme indigo
 
 set titlestring=Firefox
 
