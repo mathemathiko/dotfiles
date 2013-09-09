@@ -75,6 +75,7 @@ map <A-h> :help<CR>
 javascript <<EOF
 var templates = [
   { names: ['jq'], description: 'search api.jquery.com', url: 'http://api.jquery.com/?s=%KEYWORD%' },
+  { names: ['ra'], description: 'search http://apidock.com/rails', url: 'http://apidock.com/rails/search?query=%KEYWORD%' },
 ];
 if (liberator.globalVariables.webSearchTemplates) {
   liberator.globalVariables.webSearchTemplates = liberator.globalVariables.webSearchTemplates.concat(templates);
