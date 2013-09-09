@@ -1,8 +1,9 @@
 "+----------------------------------------------------------------------------------------+
-" general
+" basic
 "+----------------------------------------------------------------------------------------+
 
-colorscheme solarized
+" colorscheme solarized
+colorscheme sweets_snaka
 
 set titlestring=Firefox
 
