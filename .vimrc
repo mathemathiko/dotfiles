@@ -81,14 +81,6 @@ set smartindent
 
 
 """"""""""""""""""""""
-"" status line
-""""""""""""""""""""""
-
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
-highlight Visual ctermbg=gray
-
-
-""""""""""""""""""""""
 "" tmux
 """"""""""""""""""""""
 
@@ -452,33 +444,6 @@ let g:quickrun_config._ = {'runner' : 'vimproc'}
 let g:rails_default_database="mysql"
 autocmd FileType ruby set path+=test/lib
 let g:rails_level = 4
-let g:rails_projections = {
-  \   "app/controllers/shared/*.rb": {
-  \     "test": [
-  \       "test/functional/shared/%s_test.rb",
-  \       "test/functional/shared/%s_tests.rb",
-  \     ],
-  \   },
-  \   "app/helpers/*_builder.rb": {
-  \     "command": "helper",
-  \   },
-  \   "app/models/finder/*_finder.rb": {
-  \     "command": "finder",
-  \     "test": [
-  \       "test/unit/%s_finder_test.rb",
-  \     ]
-  \   },
-  \   "spec/fabricators/*_fabricator.rb": {
-  \     "command": "fabricator",
-  \     "affinity": "model",
-  \     "alternate": "app/models/%s.rb",
-  \     "related": "db/schema.rb#%p",
-  \     "test": "spec/models/%s_spec.rb",
-  \   },
-  \   "spec/support/*.rb": {
-  \     "command": "support",
-  \   },
-  \ }
 "" }}}
 
 
