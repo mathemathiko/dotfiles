@@ -3,40 +3,41 @@
 "+----------------------------------------------------------------------------------------+
 
 " colorscheme solarized
+" http://d.hatena.ne.jp/blooo/20100121/1264058591
 colorscheme sweets_snaka
 
 set titlestring=Firefox
 
-"メニュー/ツール/リンクを表示
+" display menu, tool, link
 set guioptions=mTb
 
-"ページ全体で検索語を強調表示
+" emphasis searched words
 set hlsearch
 
-"ビープ音を鳴らさずビジュアルベルを使用
+" not peep, but visualbell
 set visualbell
 
-"ビジュアルベルを無効化
-"set visualbellstyle=display:none;
+" stop visualbell
+" set visualbellstyle=display:none;
 
-"ヒントのスタイルを指定
-"set hintstyle=z-index:5000; font-family:monospace; font-size:12px; color:white; background-color:blue; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
+" set hint style
+" set hintstyle=z-index:5000; font-family:monospace; font-size:12px; color:white; background-color:blue; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
 
-"ヒント(フォーカス時)のスタイルを指定
-"set focusedhintstyle=z-index:5000; font-family:monospace; font-size:12px; color:ButtonText; background-color:ButtonShadow; border-color:ButtonShadow; border-width:1px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
+" set hint style on focus
+" set focusedhintstyle=z-index:5000; font-family:monospace; font-size:12px; color:ButtonText; background-color:ButtonShadow; border-color:ButtonShadow; border-width:1px; border-style:solid; padding:0px 1px 0px 1px; position:absolute;
 
 "+----------------------------------------------------------------------------------------+
 " key mapping
 "+----------------------------------------------------------------------------------------+
 
-"yで選択範囲をコピー
+" yank selected area with y
 map y :echo 'Yank!'<CR>Y
 
-"j/kの移動量を5倍に
+" move five times with j, k
 map j 5<C-e>
 map k 5<C-y>
 
-"<BS>で「戻る」
+" back with BackSpace
 map <BS> H
 
 "<A-Left>/<A-Right>かh/lでタブ移動
@@ -55,11 +56,11 @@ map <A-Up> :tabonly<CR>
 map <S-Left>  :tabmove! -1<CR>
 map <S-Right> :tabmove! +1<CR>
 
-"sで現在のページを保存
+" save current page with s
 "map s :saveas<CR>
 
-"<A-r>でFirefoxを再起動
+" restart firefox with <A-r>
 map <A-r> :restart<CR>
 
-"<A-h>でヘルプを表示
+" display help with <A-h>
 map <A-h> :help<CR>
