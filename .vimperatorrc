@@ -33,9 +33,9 @@ set visualbell
 " yank selected area with y
 map y :echo 'Yank!'<CR>Y
 
-" move five times with j, k
-map j 5<C-e>
-map k 5<C-y>
+" move seven times with j, k
+map j 7<C-e>
+map k 7<C-y>
 
 " back with BackSpace
 map <BS> H
