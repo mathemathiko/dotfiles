@@ -77,6 +77,7 @@ var templates = [
   { names: ['jq'], description: 'search api.jquery.com', url: 'http://api.jquery.com/?s=%KEYWORD%' },
   { names: ['ra'], description: 'search http://apidock.com/rails', url: 'http://apidock.com/rails/search?query=%KEYWORD%' },
   { names: ['gi'], description: 'search https://github.com', url: 'https://github.com/search?q=%KEYWORD%&type=Code' },
+  { names: ['mo'], description: 'search https://developer.mozilla.org/ja', url: 'https://developer.mozilla.org/ja/search?q=%KEYWORD%' },
 ];
 if (liberator.globalVariables.webSearchTemplates) {
   liberator.globalVariables.webSearchTemplates = liberator.globalVariables.webSearchTemplates.concat(templates);
