@@ -170,7 +170,7 @@ function! s:bundle.hooks.on_source(bundle)
   " NeoBundle 'mattn/unite-advent_calendar'
   NeoBundle 'choplin/unite-vim_hacks'
   NeoBundle 'h1mesuke/unite-outline'
-  NeoBundle 'ujihisa/unite-colorscheme'
+  NeoBundle 'pasela/unite-webcolorname'
 endfunction
 " NeoBundle 'Shougo/unite.vim'
 
