@@ -1,4 +1,5 @@
 " http://www.slideshare.net/cohama/vim-script-vimrc-nagoyavim-1
+" http://whileimautomaton.net/2008/08/vimworkshop3-kana-presentation
 
 """"""""""""""""""""""
 "" basic
