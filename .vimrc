@@ -1,3 +1,5 @@
+" http://www.slideshare.net/cohama/vim-script-vimrc-nagoyavim-1
+
 """"""""""""""""""""""
 "" basic
 """"""""""""""""""""""
