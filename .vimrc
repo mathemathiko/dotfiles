@@ -459,6 +459,13 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 "" }}}
 
 
+"" sunday.vim {{{
+let g:sunday_pairs = [
+  \   ['active', 'inactive'],
+  \ ]
+"" }}}
+
+
 "" svn-diff.vim {{{
 nmap ,d :call SVNDiff()<CR>
 function! SVNDiff()
