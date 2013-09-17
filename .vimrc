@@ -253,7 +253,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tsaleh/vim-matchit'
 NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'vim-browsereload-mac'
-NeoBundle 'scrooloose/syntastic'
+" NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nishigori/vim-sunday'
 
 " colorscheme
