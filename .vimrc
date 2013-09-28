@@ -275,7 +275,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'tsaleh/vim-matchit'
 " XXX: OPTMIZE
 " NeoBundle 'ecomba/vim-ruby-refactoring'
-NeoBundle 'vim-browsereload-mac'
+" NeoBundle 'tell-k/vim-browsereload-mac'
 " NeoBundle 'scrooloose/syntastic'
 " XXX: OPTIMIZE
 " NeoBundle 'nishigori/vim-sunday'
