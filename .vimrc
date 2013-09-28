@@ -144,6 +144,9 @@ endif
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" NeoBundleLazy
+" http://d.hatena.ne.jp/osyo-manga/20130211/1360582966
+
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc', {
@@ -214,7 +217,10 @@ else
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
-NeoBundleLazy "Shougo/vimfiler", { 'depends' : ["Shougo/unite.vim"] }
+NeoBundleLazy "Shougo/vimfiler", {
+\   'autoload' : { 'commands' : [ 'VimFiler' ] },
+\   'depends': [ 'Shougo/unite.vim' ],
+\ }
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
