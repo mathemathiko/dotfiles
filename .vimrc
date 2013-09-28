@@ -258,12 +258,12 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hrsh7th/vim-versions'
-NeoBundle 'tyru/open-browser.vim'
+" XXX: OPTMIZE
+" NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'tpope/vim-endwise'
 NeoBundle 'osyo-manga/vim-anzu'
-NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kana/vim-smartchr'
 " XXX: OPTMIZE
 " NeoBundle 'lilydjwg/colorizer'
@@ -291,10 +291,12 @@ NeoBundle 'baskerville/bubblegum'
 NeoBundle 'jonathanfilip/vim-lucius'
 
 " vim-scripts repos
-NeoBundle 'L9'
-NeoBundle 'FuzzyFinder'
+" XXX: OPTIMIZE
+" NeoBundle 'L9'
+" XXX: OPTIMIZE
+" NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
-NeoBundle 'taglist.vim'
+" NeoBundle 'taglist.vim'
 NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
 NeoBundle 'teol.vim'
