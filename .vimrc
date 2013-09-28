@@ -5,6 +5,7 @@
 "" optimize
 """"""""""""""""""""""
 " http://rhysd.hatenablog.com/entry/2012/12/19/001145
+" http://mattn.kaoriya.net/software/vim/20120315221158.htm
 
 """"""""""""""""""""""
 "" basic
@@ -279,19 +280,20 @@ NeoBundle 'vim-browsereload-mac'
 " XXX: OPTIMIZE
 " NeoBundle 'nishigori/vim-sunday'
 NeoBundle 'rhysd/clever-f.vim'
+NeoBundle 'mattn/benchvimrc-vim'
 
 " colorscheme
-NeoBundle 'tomasr/molokai'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'vol2223/vim-colorblind-colorscheme'
-NeoBundle 'Guardian'
-NeoBundle 'mathemathiko/vim-vividchalk'
-NeoBundle 'Zenburn'
-NeoBundle 'Wombat'
+" NeoBundle 'tomasr/molokai'
+" NeoBundle 'nanotech/jellybeans.vim'
+" NeoBundle 'vol2223/vim-colorblind-colorscheme'
+" NeoBundle 'Guardian'
+" NeoBundle 'mathemathiko/vim-vividchalk'
+" NeoBundle 'Zenburn'
+" NeoBundle 'Wombat'
 NeoBundle 'zeis/vim-kolor'
-NeoBundle 'morhetz/gruvbox'
-NeoBundle 'baskerville/bubblegum'
-NeoBundle 'jonathanfilip/vim-lucius'
+" NeoBundle 'morhetz/gruvbox'
+" NeoBundle 'baskerville/bubblegum'
+" NeoBundle 'jonathanfilip/vim-lucius'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
