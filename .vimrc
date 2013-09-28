@@ -175,13 +175,13 @@ let s:bundle = neobundle#get('unite.vim')
 function! s:bundle.hooks.on_source(bundle)
   NeoBundle 'kmnk/vim-unite-svn'
   NeoBundle 'basyura/unite-rails'
-  NeoBundle 'ujihisa/unite-colorscheme'
-  NeoBundle 'ujihisa/unite-font'
-  NeoBundle 'kannokanno/unite-todo'
+  " NeoBundle 'ujihisa/unite-colorscheme'
+  " NeoBundle 'ujihisa/unite-font'
+  " NeoBundle 'kannokanno/unite-todo'
   " NeoBundle 'mattn/unite-advent_calendar'
-  NeoBundle 'choplin/unite-vim_hacks'
-  NeoBundle 'h1mesuke/unite-outline'
-  NeoBundle 'pasela/unite-webcolorname'
+  " NeoBundle 'choplin/unite-vim_hacks'
+  " NeoBundle 'h1mesuke/unite-outline'
+  " NeoBundle 'pasela/unite-webcolorname'
 endfunction
 unlet s:bundle
 " NeoBundle 'Shougo/unite.vim'
@@ -491,9 +491,9 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 
 
 "" sunday.vim {{{
-let g:sunday_pairs = [
-  \   ['active', 'inactive'],
-  \ ]
+" let g:sunday_pairs = [
+"   \   ['active', 'inactive'],
+"   \ ]
 "" }}}
 
 
@@ -547,16 +547,16 @@ let g:unite_source_history_yank_enable =1
 
 "" unite-colorscheme.vim {{{
 " let g:unite_enable_start_insert = 1
-let g:unite_enable_split_vertically = 1
-if globpath(&rtp, 'plugin/unite.vim') != ''
-  nnoremap cs :<C-u>Unite colorscheme font<Cr>
-endif
+" let g:unite_enable_split_vertically = 1
+" if globpath(&rtp, 'plugin/unite.vim') != ''
+"   nnoremap cs :<C-u>Unite colorscheme font<Cr>
+" endif
 "" }}}
 
 
 "" unite-outline.vim {{{
 " http://hinagishi.hateblo.jp/entry/2011/11/18/135701
-noremap :uo :Unite -vertical -winwidth=40 -no-quit outline
+" noremap :uo :Unite -vertical -winwidth=40 -no-quit outline
 "" }}}
 
 
