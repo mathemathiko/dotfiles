@@ -256,19 +256,22 @@ NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
-NeoBundle 'mattn/emmet-vim'
+" XXX: OPTMIZE
+" NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hrsh7th/vim-versions'
 " XXX: OPTMIZE
 " NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'tpope/vim-endwise'
-NeoBundle 'osyo-manga/vim-anzu'
+" XXX: OPTMIZE
+" NeoBundle 'osyo-manga/vim-anzu'
 NeoBundle 'kana/vim-smartchr'
 " XXX: OPTMIZE
 " NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tsaleh/vim-matchit'
+" XXX: OPTMIZE
+" NeoBundle 'tsaleh/vim-matchit'
 " XXX: OPTMIZE
 " NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'vim-browsereload-mac'
@@ -324,15 +327,15 @@ filetype plugin indent on     " Required!
 """"""""""""""""""""""
 
 " vim-anzu "{{{
-nmap n <Plug>(anzu-n)
-nmap N <Plug>(anzu-N)
-nmap * <Plug>(anzu-star)
-nmap # <Plug>(anzu-sharp)
-augroup vim-anzu
+" nmap n <Plug>(anzu-n)
+" nmap N <Plug>(anzu-N)
+" nmap * <Plug>(anzu-star)
+" nmap # <Plug>(anzu-sharp)
+" augroup vim-anzu
 " NOT display at particular time
-  autocmd!
-  autocmd CursorHold,CursorHoldI,WinLeave,TabLeave * call anzu#clear_search_status()
-augroup END
+"   autocmd!
+"   autocmd CursorHold,CursorHoldI,WinLeave,TabLeave * call anzu#clear_search_status()
+" augroup END
 " }}}
 
 
@@ -383,7 +386,7 @@ let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified', 'anzu' ] ]
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
       \   'modified': 'MyModified',
@@ -394,7 +397,6 @@ let g:lightline = {
       \   'filetype': 'MyFiletype',
       \   'fileencoding': 'MyFileencoding',
       \   'mode': 'MyMode',
-      \   'anzu': 'anzu#search_status',
       \ },
       \ 'separator': { 'left': '⮀', 'right': '⮂' },
       \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
