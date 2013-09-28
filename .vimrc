@@ -494,6 +494,11 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 "" }}}
 
 
+"" vim-shell {{{
+nnoremap :sh :VimShellBufferDir
+"" }}}
+
+
 "" sunday.vim {{{
 " let g:sunday_pairs = [
 "   \   ['active', 'inactive'],
@@ -585,4 +590,9 @@ endfunction
 aug MyAutoCmd
   au User Rails call UniteRailsSetting()
 aug END
+"" }}}
+
+
+"" vimfiler {{{
+nnoremap :vf :VimFiler
 "" }}}
