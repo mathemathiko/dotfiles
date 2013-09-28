@@ -227,8 +227,9 @@ NeoBundleLazy "Shougo/vimfiler", {
 \   'depends': [ 'Shougo/unite.vim' ],
 \ }
 NeoBundle 'sjl/gundo.vim'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'tpope/vim-fugitive'
+" NeoBundle 'slim-template/vim-slim'
+" XXX: OPTIMIZE
+" NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kg8m/svn-diff.vim'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'kg8m/moin.vim'
@@ -238,7 +239,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'Lokaltog/vim-easymotion'
+" XXX: OPTIMIZE
+" NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
@@ -263,13 +265,16 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'osyo-manga/vim-anzu'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'kana/vim-smartchr'
-NeoBundle 'lilydjwg/colorizer'
+" XXX: OPTMIZE
+" NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tsaleh/vim-matchit'
-NeoBundle 'ecomba/vim-ruby-refactoring'
+" XXX: OPTMIZE
+" NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'vim-browsereload-mac'
 " NeoBundle 'scrooloose/syntastic'
-NeoBundle 'nishigori/vim-sunday'
+" XXX: OPTIMIZE
+" NeoBundle 'nishigori/vim-sunday'
 NeoBundle 'rhysd/clever-f.vim'
 
 " colorscheme
@@ -298,7 +303,8 @@ NeoBundle 'teol.vim'
 NeoBundle 'git://git.wincent.com/command-t.git'
 
 " Non git repos
-NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+" XXX: OPTIMIZE
+" NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 
 filetype plugin indent on     " Required!
