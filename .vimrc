@@ -255,6 +255,7 @@ NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'vim-browsereload-mac'
 " NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nishigori/vim-sunday'
+NeoBundle 'rhysd/clever-f.vim'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
@@ -320,6 +321,13 @@ augroup END
 " let g:buftabs_in_statusline = 1
 " highlight
 " let g:buftabs_active_highlight_group="Visual"
+" }}}
+
+
+" clever-f.vim "{{{
+let g:clever_f_smart_case = 1
+let g:clever_f_fix_key_direction = 1
+let g:clever_f_chars_match_any_signs = ';'
 " }}}
 
 
