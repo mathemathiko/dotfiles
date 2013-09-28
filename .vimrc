@@ -285,6 +285,7 @@ NeoBundle 'mattn/benchvimrc-vim'
 " colorscheme
 " NeoBundle 'tomasr/molokai'
 " NeoBundle 'nanotech/jellybeans.vim'
+" NeoBundle 'w0ng/vim-hybrid'
 " NeoBundle 'vol2223/vim-colorblind-colorscheme'
 " NeoBundle 'Guardian'
 " NeoBundle 'mathemathiko/vim-vividchalk'
