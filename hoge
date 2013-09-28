@@ -1,0 +1,150 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.048  000.048: --- VIM STARTING ---
+000.208  000.160: Allocated generic buffers
+000.835  000.627: locale set
+000.855  000.020: window checked
+002.218  001.363: inits 1
+002.231  000.013: parsing arguments
+002.233  000.002: expanding arguments
+002.269  000.036: shell init
+002.912  000.643: Termcap init
+002.961  000.049: inits 2
+003.208  000.247: init highlight
+003.714  000.355  000.355: sourcing $VIM/vimrc
+005.944  000.914  000.914: sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+006.266  001.528  000.614: sourcing /usr/share/vim/vim73/syntax/synload.vim
+043.447  036.974  036.974: sourcing /usr/share/vim/vim73/filetype.vim
+043.555  039.181  000.679: sourcing /usr/share/vim/vim73/syntax/syntax.vim
+044.239  000.293  000.293: sourcing /usr/share/vim/vim73/syntax/nosyntax.vim
+044.998  000.420  000.420: sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+045.247  000.854  000.434: sourcing /usr/share/vim/vim73/syntax/synload.vim
+045.333  001.535  000.388: sourcing /usr/share/vim/vim73/syntax/syntax.vim
+046.590  000.468  000.468: sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+047.623  000.576  000.576: sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+048.290  000.470  000.470: sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+049.635  003.928  002.414: sourcing /Users/masumi/.vim/colors/kolor.vim
+051.155  000.685  000.685: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/util.vim
+052.974  002.780  002.095: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle.vim
+055.642  002.027  002.027: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/config.vim
+057.844  002.042  002.042: sourcing /usr/share/vim/vim73/ftoff.vim
+058.822  000.475  000.475: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/autoload.vim
+061.610  000.480  000.480: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/types/git.vim
+062.277  000.333  000.333: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/types/hg.vim
+062.835  000.215  000.215: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/types/nosync.vim
+063.589  000.413  000.413: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/types/raw.vim
+064.176  000.241  000.241: sourcing /Users/masumi/.vim/neobundle.vim.git/autoload/neobundle/types/svn.vim
+218.970  000.083  000.083: sourcing /Users/masumi/.vim/bundle/vim-slim/ftdetect/slim.vim
+219.359  000.105  000.105: sourcing /Users/masumi/.vim/bundle/neosnippet/ftdetect/snippet.vim
+219.751  000.202  000.202: sourcing /Users/masumi/.vim/bundle/vim-haml/ftdetect/haml.vim
+220.129  000.195  000.195: sourcing /Users/masumi/.vim/bundle/vim-markdown/ftdetect/mkd.vim
+222.215  001.505  001.505: sourcing /Users/masumi/.vim/bundle/vim-ruby/ftdetect/ruby.vim
+223.027  000.068  000.068: sourcing /Users/masumi/.vim/neobundle.vim.git/ftdetect/vimrecipe.vim
+223.306  036.236  034.078: sourcing /usr/share/vim/vim73/filetype.vim
+224.217  000.116  000.116: sourcing /usr/share/vim/vim73/ftplugin.vim
+225.070  000.096  000.096: sourcing /usr/share/vim/vim73/indent.vim
+227.272  223.436  133.338: sourcing $HOME/.vimrc
+227.286  000.287: sourcing vimrc file(s)
+227.904  000.322  000.322: sourcing /Users/masumi/.vim/bundle/vimproc/plugin/vimproc.vim
+228.842  000.360  000.360: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache/buffer_complete.vim
+229.083  000.158  000.158: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache/dictionary_complete.vim
+229.322  000.158  000.158: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache/include_complete.vim
+229.556  000.154  000.154: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache/syntax_complete.vim
+229.792  000.156  000.156: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache/tags_complete.vim
+231.525  001.651  001.651: sourcing /Users/masumi/.vim/bundle/neocomplcache/plugin/neocomplcache.vim
+231.935  000.161  000.161: sourcing /Users/masumi/.vim/bundle/gundo.vim/plugin/gundo.vim
+242.818  010.562  010.562: sourcing /Users/masumi/.vim/bundle/vim-fugitive/plugin/fugitive.vim
+243.261  000.058  000.058: sourcing /Users/masumi/.vim/bundle/moin.vim/plugin/moin.vim
+244.499  000.959  000.959: sourcing /Users/masumi/.vim/bundle/neosnippet/plugin/neosnippet.vim
+246.465  001.715  001.715: sourcing /Users/masumi/.vim/bundle/vim-surround/plugin/surround.vim
+248.070  001.321  001.321: sourcing /Users/masumi/.vim/bundle/vim-rubytest/plugin/rubytest.vim
+249.848  001.140  001.140: sourcing /Users/masumi/.vim/bundle/vim-easymotion/autoload/EasyMotion.vim
+254.910  006.555  005.415: sourcing /Users/masumi/.vim/bundle/vim-easymotion/plugin/EasyMotion.vim
+255.619  000.358  000.358: sourcing /Users/masumi/.vim/bundle/vim-quickrun/plugin/quickrun.vim
+260.952  005.079  005.079: sourcing /Users/masumi/.vim/bundle/vim-mru/plugin/mru.vim
+264.108  002.893  002.893: sourcing /Users/masumi/.vim/bundle/vim-autoclose/plugin/AutoClose.vim
+264.885  000.507  000.507: sourcing /Users/masumi/.vim/bundle/vim-rails/plugin/rails.vim
+265.434  000.277  000.277: sourcing /Users/masumi/.vim/bundle/ag.vim/plugin/ag.vim
+271.989  006.275  006.275: sourcing /Users/masumi/.vim/bundle/emmet-vim/plugin/emmet.vim
+272.401  000.160  000.160: sourcing /Users/masumi/.vim/bundle/vim-versions/plugin/versions.vim
+272.872  000.195  000.195: sourcing /Users/masumi/.vim/bundle/lightline.vim/plugin/lightline.vim
+274.463  001.351  001.351: sourcing /Users/masumi/.vim/bundle/vim-anzu/plugin/anzu.vim
+303.377  028.661  028.661: sourcing /Users/masumi/.vim/bundle/open-browser.vim/plugin/openbrowser.vim
+330.690  026.970  026.970: sourcing /Users/masumi/.vim/bundle/colorizer/plugin/colorizer.vim
+332.939  001.900  001.900: sourcing /Users/masumi/.vim/bundle/vim-matchit/plugin/matchit.vim
+334.046  000.081  000.081: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/addparameter.vim
+334.198  000.069  000.069: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/addparameternb.vim
+334.334  000.055  000.055: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/extractconstant.vim
+334.971  000.555  000.555: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/extractmethod.vim
+335.132  000.078  000.078: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/extractvariable.vim
+335.292  000.080  000.080: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/inlinetemp.vim
+335.446  000.074  000.074: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/introducevariable.vim
+335.670  000.143  000.143: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/postconditional.vim
+335.858  000.106  000.106: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/renameinstancevariable.vim
+336.001  000.063  000.063: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/renamelocalvariable.vim
+336.129  000.047  000.047: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/refactorings/general/rspec_extractlet.vim
+339.427  003.222  003.222: sourcing /Users/masumi/.vim/bundle/vim-ruby-refactoring/plugin/ruby-refactoring.vim
+347.726  008.046  008.046: sourcing /Users/masumi/.vim/bundle/vim-sunday/plugin/sunday.vim
+348.553  000.572  000.572: sourcing /Users/masumi/.vim/bundle/clever-f.vim/plugin/clever-f.vim
+350.959  001.194  001.194: sourcing /Users/masumi/.vim/bundle/L9/autoload/l9.vim
+351.411  002.276  001.082: sourcing /Users/masumi/.vim/bundle/L9/plugin/l9.vim
+358.572  002.860  002.860: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf.vim
+360.225  000.571  000.571: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/buffer.vim
+361.963  000.461  000.461: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/file.vim
+364.069  000.592  000.592: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/coveragefile.vim
+365.840  000.440  000.440: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/dir.vim
+368.317  000.934  000.934: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/bookmarkfile.vim
+370.845  001.195  001.195: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/bookmarkdir.vim
+373.364  001.295  001.295: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/tag.vim
+376.401  001.676  001.676: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/buffertag.vim
+381.103  001.241  001.241: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/taggedfile.vim
+383.657  001.294  001.294: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/jumplist.vim
+386.221  001.300  001.300: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/changelist.vim
+388.289  000.800  000.800: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/quickfix.vim
+389.945  000.448  000.448: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/line.vim
+391.737  000.593  000.593: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/help.vim
+393.536  000.433  000.433: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/givenfile.vim
+395.110  000.434  000.434: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/givendir.vim
+396.719  000.477  000.477: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/givencmd.vim
+398.348  000.466  000.466: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/callbackfile.vim
+399.971  000.463  000.463: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/autoload/fuf/callbackitem.vim
+400.046  048.384  030.411: sourcing /Users/masumi/.vim/bundle/FuzzyFinder/plugin/fuf.vim
+405.299  004.985  004.985: sourcing /Users/masumi/.vim/bundle/EnhCommentify.vim/plugin/EnhancedCommentify.vim
+407.282  001.723  001.723: sourcing /Users/masumi/.vim/bundle/taglist.vim/plugin/taglist.vim
+407.883  000.355  000.355: sourcing /Users/masumi/.vim/bundle/sudo.vim/plugin/sudo.vim
+408.720  000.600  000.600: sourcing /Users/masumi/.vim/bundle/teol.vim/plugin/teol.vim
+409.463  000.503  000.503: sourcing /Users/masumi/.vim/bundle/command-t/plugin/command-t.vim
+417.974  008.267  008.267: sourcing /Users/masumi/.vim/bundle/vim-fuzzyfinder/plugin/fuf.vim
+418.935  000.241  000.241: sourcing /usr/share/vim/vim73/plugin/getscriptPlugin.vim
+419.546  000.520  000.520: sourcing /usr/share/vim/vim73/plugin/gzip.vim
+420.127  000.487  000.487: sourcing /usr/share/vim/vim73/plugin/matchparen.vim
+421.729  001.505  001.505: sourcing /usr/share/vim/vim73/plugin/netrwPlugin.vim
+421.877  000.049  000.049: sourcing /usr/share/vim/vim73/plugin/rrhelper.vim
+422.047  000.080  000.080: sourcing /usr/share/vim/vim73/plugin/spellfile.vim
+422.556  000.413  000.413: sourcing /usr/share/vim/vim73/plugin/tarPlugin.vim
+422.787  000.138  000.138: sourcing /usr/share/vim/vim73/plugin/tohtml.vim
+423.230  000.352  000.352: sourcing /usr/share/vim/vim73/plugin/vimballPlugin.vim
+423.638  000.313  000.313: sourcing /usr/share/vim/vim73/plugin/zipPlugin.vim
+425.108  000.153  000.153: sourcing /Users/masumi/.vim/neobundle.vim.git/plugin/neobundle.vim
+425.276  014.539: loading plugins
+425.297  000.021: inits 3
+425.910  000.613: reading viminfo
+425.943  000.033: setting raw mode
+425.980  000.037: start termcap
+426.074  000.094: clearing screen
+428.761  000.538  000.538: sourcing /Users/masumi/.vim/bundle/lightline.vim/autoload/lightline.vim
+431.452  000.489  000.489: sourcing /Users/masumi/.vim/bundle/lightline.vim/autoload/lightline/colorscheme.vim
+435.225  004.944  004.455: sourcing /Users/masumi/.vim/bundle/lightline.vim/autoload/lightline/colorscheme/powerline.vim
+435.248  005.523  000.579: sourcing /Users/masumi/.vim/bundle/lightline.vim/autoload/lightline/colorscheme/default.vim
+447.172  015.037: opening buffers
+455.080  007.908: BufEnter autocommands
+455.086  000.006: editing files in windows
+460.122  005.036: VimEnter autocommands
+460.126  000.004: before starting main loop
+461.284  000.623  000.623: sourcing /Users/masumi/.vim/bundle/vim-anzu/autoload/anzu.vim
+480.904  020.155: first screen update
+480.971  000.067: --- VIM STARTED ---

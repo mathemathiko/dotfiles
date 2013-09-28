@@ -2,6 +2,11 @@
 " http://whileimautomaton.net/2008/08/vimworkshop3-kana-presentation
 
 """"""""""""""""""""""
+"" optimize
+""""""""""""""""""""""
+" http://rhysd.hatenablog.com/entry/2012/12/19/001145
+
+""""""""""""""""""""""
 "" basic
 """"""""""""""""""""""
 
