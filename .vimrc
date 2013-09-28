@@ -175,6 +175,7 @@ function! s:bundle.hooks.on_source(bundle)
   NeoBundle 'h1mesuke/unite-outline'
   NeoBundle 'pasela/unite-webcolorname'
 endfunction
+unlet s:bundle
 " NeoBundle 'Shougo/unite.vim'
 
 NeoBundleLazy 'Shougo/vimshell', {
@@ -185,6 +186,7 @@ let s:bundle = neobundle#get('vimshell')
 function! s:bundle.hooks.on_source(bundle)
   " write vimshell settings here.
 endfunction
+unlet s:bundle
 " NeoBundle 'Shougo/vimshell.vim'
 
 if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
@@ -211,6 +213,8 @@ else
   let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 endif
 
+" http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
+NeoBundleLazy "Shougo/vimfiler", { 'depends' : ["Shougo/unite.vim"] }
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-fugitive'
