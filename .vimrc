@@ -209,6 +209,13 @@ if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
   " Set minimum syntax keyword length.
   let g:neocomplete#sources#syntax#min_keyword_length = 3
   let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+  inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
+  inoremap <expr><CR>   pumvisible() ? "\<C-n>" . neocomplete#close_popup()  : "<CR>"
+  inoremap <expr><C-e>  pumvisible() ? neocomplete#close_popup() : "<End>"
+  inoremap <expr><C-c>  neocomplete#cancel_popup()
+  inoremap <expr><C-u>  neocomplete#undo_completion()
+  inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
 else
   NeoBundle 'Shougo/neocomplcache'
   " Disable AutoComplPop.
@@ -220,6 +227,13 @@ else
   " Set minimum syntax keyword length.
   let g:neocomplcache_min_syntax_length = 3
   let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+  inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
+  inoremap <expr><CR>   pumvisible() ? "\<C-n>" . neocomplcache#close_popup()  : "<CR>"
+  inoremap <expr><C-e>  pumvisible() ? neocomplcache#close_popup() : "<End>"
+  inoremap <expr><C-c>  neocomplcache#cancel_popup()
+  inoremap <expr><C-u>  neocomplcache#undo_completion()
+  inoremap <expr><C-h>  neocomplcache#smart_close_popup()."\<C-h>"
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
