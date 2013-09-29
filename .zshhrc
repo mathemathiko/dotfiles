@@ -38,6 +38,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # MacVim
+# http://qiita.com/skkzsh@github/items/3ef20fb73e849eca5278
 case "`uname`" in
     Darwin)
         if [ -d /Applications/MacVim.app ]; then
