@@ -198,6 +198,7 @@ endfunction
 unlet s:bundle
 " NeoBundle 'Shougo/vimshell.vim'
 
+" http://blog.basyura.org/entry/2013/08/17/154700
 if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
   NeoBundle "Shougo/neocomplete"
   " Disable AutoComplPop.
