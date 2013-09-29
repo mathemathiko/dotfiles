@@ -219,6 +219,13 @@ if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
   inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
 else
   NeoBundle 'Shougo/neocomplcache'
+
+  hi Pmenu ctermbg=8
+  hi PmenuSel ctermbg=11 ctermfg=0
+  hi PmenuSbar ctermbg=0
+  set pumheight=20
+
+  let g:Align_xstrlen = 3
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 0
   " Use neocomplcache.
@@ -470,17 +477,6 @@ au BufNewFile,BufRead *.moin setf moin
 au BufNewFile,BufRead *.trac setf moin
 " }}}
 "
-
-
-"" neocomplcache.vim {{{
-let g:neocomplcache_enable_at_startup = 1
-" imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" :pumvisible() ?  "\<C-n>" : "\<TAB>"
-hi Pmenu ctermbg=8
-hi PmenuSel ctermbg=11 ctermfg=0
-hi PmenuSbar ctermbg=0
-set pumheight=20
-let g:Align_xstrlen = 3
-"" }}}
 
 
 "" powerline {{{
