@@ -37,6 +37,18 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# MacVim
+case "`uname`" in
+    Darwin)
+        if [ -d /Applications/MacVim.app ]; then
+            alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+            alias vi='vim'
+        fi
+        ;;
+
+    *) ;;
+esac
+
 # fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
