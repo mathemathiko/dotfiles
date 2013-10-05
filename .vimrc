@@ -53,11 +53,11 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme zenburn
 " colorscheme guardian
 " colorscheme wombat
-colorscheme kolor
+" colorscheme kolor
 " colorscheme gruvbox
 " colorscheme bubblegum
 " colorscheme lucius
-
+colorscheme solarized
 
 """"""""""""""""""""""
 "" search
@@ -310,6 +310,7 @@ NeoBundle 'zeis/vim-kolor'
 " NeoBundle 'morhetz/gruvbox'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'altercation/vim-colors-solarized'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
@@ -537,6 +538,15 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 
 "" vim-shell {{{
 nnoremap :sh :VimShellBufferDir
+"" }}}
+
+
+"" solarized {{{
+" I use xterm-256color as my terminfo on tmux 1.7 & Terminal.app on OS X Lion, so enable termtrans by manually.
+" see https://github.com/altercation/vim-colors-solarized
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+set background=dark
 "" }}}
 
 
