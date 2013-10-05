@@ -176,6 +176,7 @@ NeoBundleLazy 'Shougo/unite.vim' , {
 let s:bundle = neobundle#get('unite.vim')
 function! s:bundle.hooks.on_source(bundle)
   NeoBundle 'kmnk/vim-unite-svn'
+  " http://qiita.com/alpaca_taichou/items/ab2ad83ddbaf2f6ce7fb
   NeoBundle 'basyura/unite-rails'
   " NeoBundle 'ujihisa/unite-colorscheme'
   " NeoBundle 'ujihisa/unite-font'
