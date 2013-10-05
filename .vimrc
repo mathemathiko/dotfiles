@@ -201,7 +201,7 @@ unlet s:bundle
 " NeoBundle 'Shougo/vimshell.vim'
 
 " http://blog.basyura.org/entry/2013/08/17/154700
-if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
+if has('lua')
   NeoBundle "Shougo/neocomplete"
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 0
@@ -219,31 +219,6 @@ if has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
   inoremap <expr><C-c>  neocomplete#cancel_popup()
   inoremap <expr><C-u>  neocomplete#undo_completion()
   inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
-else
-  NeoBundle 'Shougo/neocomplcache'
-
-  hi Pmenu ctermbg=8
-  hi PmenuSel ctermbg=11 ctermfg=0
-  hi PmenuSbar ctermbg=0
-  set pumheight=20
-
-  let g:Align_xstrlen = 3
-  " Disable AutoComplPop.
-  let g:acp_enableAtStartup = 0
-  " Use neocomplcache.
-  let g:neocomplcache_enable_at_startup = 1
-  " Use smartcase.
-  let g:neocomplcache_enable_smart_case = 1
-  " Set minimum syntax keyword length.
-  let g:neocomplcache_min_syntax_length = 3
-  let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
-  inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
-  inoremap <expr><CR>   pumvisible() ? "\<C-n>" . neocomplcache#close_popup()  : "<CR>"
-  inoremap <expr><C-e>  pumvisible() ? neocomplcache#close_popup() : "<End>"
-  inoremap <expr><C-c>  neocomplcache#cancel_popup()
-  inoremap <expr><C-u>  neocomplcache#undo_completion()
-  inoremap <expr><C-h>  neocomplcache#smart_close_popup()."\<C-h>"
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
