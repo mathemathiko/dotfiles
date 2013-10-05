@@ -203,6 +203,7 @@ unlet s:bundle
 " http://blog.basyura.org/entry/2013/08/17/154700
 if has('lua')
   NeoBundle "Shougo/neocomplete"
+
   " Disable AutoComplPop.
   let g:acp_enableAtStartup = 0
   " Use neocomplete.
@@ -213,12 +214,19 @@ if has('lua')
   let g:neocomplete#sources#syntax#min_keyword_length = 3
   let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
+  " Define keyword.
+  if !exists('g:neocomplete#keyword_patterns')
+      let g:neocomplete#keyword_patterns = {}
+  endif
+  let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+  inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
   inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
   inoremap <expr><CR>   pumvisible() ? "\<C-n>" . neocomplete#close_popup()  : "<CR>"
-  inoremap <expr><C-e>  pumvisible() ? neocomplete#close_popup() : "<End>"
   inoremap <expr><C-c>  neocomplete#cancel_popup()
   inoremap <expr><C-u>  neocomplete#undo_completion()
-  inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
+  inoremap <expr><C-e>  neocomplete#close_popup()
+  inoremap <expr><C-l>  neocomplete#complete_common_string()
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
