@@ -538,6 +538,11 @@ endfunction
 "" }}}
 
 
+"" switch.vim {{{
+nnoremap - :Switch<cr>
+"" }}}
+
+
 "" unite.vim {{{
 " The prefix key.
 " nnoremap    [unite]   <Nop>
