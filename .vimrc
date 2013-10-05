@@ -19,6 +19,7 @@ set cursorcolumn
 set notextmode
 set encoding=utf-8
 set fileencoding=utf-8
+set ttyfast
 hi CursorLine guifg=NONE guibg=#505050
 
 syntax on
@@ -323,6 +324,7 @@ NeoBundle 'zeis/vim-kolor'
 " NeoBundle 'morhetz/gruvbox'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'othree/eregex.vim'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
