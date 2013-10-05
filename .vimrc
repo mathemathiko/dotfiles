@@ -255,7 +255,7 @@ NeoBundle 'sjl/gundo.vim'
 " XXX: OPTIMIZE
 " NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kg8m/svn-diff.vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'Shougo/neosnippet'
