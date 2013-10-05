@@ -294,6 +294,8 @@ NeoBundle 'alpaca-tc/alpaca_complete',{
       \     'mac' : 'gem install alpaca_complete',
       \     'unix' : 'gem install alpaca_complete',
       \ }}
+NeoBundle 'othree/eregex.vim'
+NeoBundle 'AndrewRadev/switch.vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -308,8 +310,6 @@ NeoBundle 'zeis/vim-kolor'
 " NeoBundle 'morhetz/gruvbox'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
-NeoBundle 'othree/eregex.vim'
-NeoBundle 'AndrewRadev/switch.vim'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
