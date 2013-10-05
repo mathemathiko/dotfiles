@@ -303,6 +303,11 @@ NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'nishigori/vim-sunday'
 NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'mattn/benchvimrc-vim'
+NeoBundle 'alpaca-tc/alpaca_complete',{
+      \ 'depends' : ['tpope/vim-rails', 'Shougo/neocomplete'],
+      \ 'build' : {
+      \     'mac' : 'gem install alpaca_complete',
+      \     'unix' : 'gem install alpaca_complete',
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
