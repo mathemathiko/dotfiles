@@ -308,6 +308,7 @@ NeoBundle 'alpaca-tc/alpaca_complete',{
       \ 'build' : {
       \     'mac' : 'gem install alpaca_complete',
       \     'unix' : 'gem install alpaca_complete',
+      \ }}
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
