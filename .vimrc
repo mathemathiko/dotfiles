@@ -401,7 +401,7 @@ let g:EnhCommentifyBindInInsert = 'no'
 
 
 " gundo "{{{
-nnoremap <F5> :GundoToggle<CR>
+nmap U :<C-u>GundoToggle<CR>
 " }}}
 
 
