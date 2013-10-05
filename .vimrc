@@ -325,6 +325,7 @@ NeoBundle 'zeis/vim-kolor'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'othree/eregex.vim'
+NeoBundle 'AndrewRadev/switch.vim'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
