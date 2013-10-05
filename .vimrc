@@ -380,6 +380,14 @@ let g:EnhCommentifyBindInInsert = 'no'
 " }}}
 
 
+" eregex.vim "{{{
+nnoremap ,/ :M/
+nnoremap ,? :M?
+"" call Explore only E; to prevent ambiguous command with E2v
+command! E :Explore
+" }}}
+
+
 "" gruvbox {{{
 " map <F5> :call ToggleBg()<CR>
 " function! ToggleBg()
