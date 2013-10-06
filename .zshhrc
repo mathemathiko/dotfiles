@@ -81,6 +81,9 @@ readuntil () {
   done
 }
 
+# if cd, then ls
+function chpwd() { ls -F }
+
 #### MacVim
 # http://qiita.com/skkzsh@github/items/3ef20fb73e849eca5278
 case "`uname`" in
