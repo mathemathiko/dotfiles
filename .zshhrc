@@ -36,7 +36,7 @@ ZSH_THEME="nicoulaj"
 plugins=(git)
 
 
-### basic
+#### basic
 source $ZSH/oh-my-zsh.sh
 bindkey -v
 
@@ -55,6 +55,12 @@ alias ls='gls --color=auto'
 alias ll='ls -la'
 alias mys='mysql -u root -p'
 
+# history-search-end with vi keybind
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
 
 #### MacVim
 # http://qiita.com/skkzsh@github/items/3ef20fb73e849eca5278
