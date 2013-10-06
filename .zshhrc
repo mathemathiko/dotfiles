@@ -35,9 +35,28 @@ ZSH_THEME="nicoulaj"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 
-# MacVim
+### basic
+source $ZSH/oh-my-zsh.sh
+bindkey -v
+
+# fpath=(/usr/local/share/zsh-completions $fpath)
+export PATH="$HOME/.rbenv/bin:$PATH"
+export RBENV_VERSION=1.9.3-p362
+export EDITOR=vim
+
+eval "$(rbenv init -)"
+
+setopt nonomatch
+
+alias diff='git diff | vim -R -'
+alias conso='rails console'
+alias ls='gls --color=auto'
+alias ll='ls -la'
+alias mys='mysql -u root -p'
+
+
+#### MacVim
 # http://qiita.com/skkzsh@github/items/3ef20fb73e849eca5278
 case "`uname`" in
     Darwin)
@@ -50,21 +69,8 @@ case "`uname`" in
     *) ;;
 esac
 
-# fpath=(/usr/local/share/zsh-completions $fpath)
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export RBENV_VERSION=1.9.3-p362
-alias diff='git diff | vim -R -'
 
-alias conso='rails console'
-alias ls='gls --color=auto'
-alias ll='ls -la'
-alias mys='mysql -u root -p'
-
-export EDITOR=vim
-setopt nonomatch
-
-### colors
+#### colors
 export TERM="screen-256color"
 eval $(gdircolors ~/dircolors-solarized/dircolors.256dark)
 if [ -n "$LS_COLORS" ]; then
@@ -72,7 +78,7 @@ if [ -n "$LS_COLORS" ]; then
 fi
 
 
-### tmux
+#### tmux
 alias mux='tmux -2'
 alias td='tmux detach'
 alias ta='tmux attach'
