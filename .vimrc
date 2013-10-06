@@ -20,6 +20,7 @@ set notextmode
 set encoding=utf-8
 set fileencoding=utf-8
 set ttyfast
+set clipboard+=unnamed
 hi CursorLine guifg=NONE guibg=#505050
 
 syntax on
