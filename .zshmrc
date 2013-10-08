@@ -49,10 +49,7 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
     done
 fi
 
-
 alias conso='rails console'
-alias ls='gls --color=auto'
-alias ll='ls -la'
 alias mys='mysql -u root'
 alias cdr='cd Desktop/note/work/report/'
 
