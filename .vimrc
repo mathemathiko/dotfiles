@@ -357,6 +357,7 @@ NeoBundle 'EnhCommentify.vim'
 NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
 NeoBundle 'teol.vim'
+NeoBundle 'YankRing.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
@@ -655,4 +656,9 @@ aug END
 
 "" vimfiler {{{
 nnoremap :vf :VimFiler
+"" }}}
+
+
+"" YankRing {{{
+nmap ,y :YRShow<CR>
 "" }}}
