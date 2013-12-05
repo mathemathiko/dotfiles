@@ -116,7 +116,7 @@ nnoremap <silent>bl :bl<CR>
 nnoremap <silent>bm :bm<CR>
 nnoremap <silent>bd :bdelete<CR>
 
-map ; :
+" map ; :
 map j gj
 map k gk
 
