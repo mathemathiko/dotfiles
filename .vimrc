@@ -228,6 +228,8 @@ if has('lua')
   inoremap <expr><C-u>  neocomplete#undo_completion()
   inoremap <expr><C-e>  neocomplete#close_popup()
   inoremap <expr><C-l>  neocomplete#complete_common_string()
+
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
@@ -358,6 +360,7 @@ NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
 NeoBundle 'teol.vim'
 NeoBundle 'YankRing.vim'
+NeoBundle 'dbext.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
@@ -607,6 +610,9 @@ let g:vinarise_enable_auto_detect = 1
 
 " vim-versions
 nnoremap <silent> ,uv :<C-u>UniteVersions status:!<CR>
+
+"qfreplace
+nnoremap ,ug :<C-u>Unite grep:./::
 
 " yank history
 let g:unite_source_history_yank_enable =1
