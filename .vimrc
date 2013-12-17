@@ -333,6 +333,7 @@ NeoBundle 'alpaca-tc/alpaca_complete',{
       \ }}
 NeoBundle 'othree/eregex.vim'
 NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'LeafCage/yankround.vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -359,7 +360,7 @@ NeoBundle 'EnhCommentify.vim'
 NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
 NeoBundle 'teol.vim'
-NeoBundle 'YankRing.vim'
+" NeoBundle 'YankRing.vim'
 NeoBundle 'dbext.vim'
 
 " Non github repos
@@ -666,5 +667,15 @@ nnoremap :vf :VimFiler
 
 
 "" YankRing {{{
-nmap ,y :YRShow<CR>
+" nmap ,y :YRShow<CR>
+"" }}}
+
+
+"" yankround {{{
+nmap p <Plug>(yankround-p)
+nmap P <Plug>(yankround-P)
+nmap gp <Plug>(yankround-gp)
+nmap gP <Plug>(yankround-gP)
+nmap <C-p> <Plug>(yankround-prev)
+nmap <C-n> <Plug>(yankround-next)
 "" }}}
