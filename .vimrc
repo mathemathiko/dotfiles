@@ -334,6 +334,7 @@ NeoBundle 'alpaca-tc/alpaca_complete',{
 NeoBundle 'othree/eregex.vim'
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'LeafCage/yankround.vim'
+NeoBundle 'mattn/gist-vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
