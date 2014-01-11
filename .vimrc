@@ -600,9 +600,21 @@ nnoremap - :Switch<cr>
 " The prefix key.
 " nnoremap    [unite]   <Nop>
 " nmap    <Leader>f [unite]
+
+let g:unite_source_menu_menus = {
+      \   "gist" : {
+      \       "description" : "unite-gist-menu",
+      \       "command_candidates" : [
+      \           ["my gists",   "Gist -l mathemathiko"],
+      \           ["edit gist",  "Gist -e"],
+      \       ],
+      \   },
+      \}
  
 " unite.vim keymap
 " https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
+nnoremap Um :<C-u>Unite menu<CR>
+nnoremap Ug :<C-u>Unite menu:gist<CR>
 nnoremap [unite]u  :<C-u>Unite -no-split<Space>
 nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
 nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
