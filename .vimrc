@@ -98,6 +98,14 @@ set smartindent
 set clipboard+=unnamed
 set clipboard+=autoselect
 
+
+""""""""""""""""""""""
+"" task list
+""""""""""""""""""""""
+
+command! Tm edit ~/Desktop/note/work/task/2014/201401.md
+
+
 """"""""""""""""""""""
 "" key binding
 """"""""""""""""""""""
@@ -116,7 +124,7 @@ nnoremap <silent>bl :bl<CR>
 nnoremap <silent>bm :bm<CR>
 nnoremap <silent>bd :bdelete<CR>
 
-map ; :
+" map ; :
 map j gj
 map k gk
 
