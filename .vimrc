@@ -236,6 +236,8 @@ if has('lua')
   inoremap <expr><C-u>  neocomplete#undo_completion()
   inoremap <expr><C-e>  neocomplete#close_popup()
   inoremap <expr><C-l>  neocomplete#complete_common_string()
+
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 endif
 
 " http://qiita.com/hide/items/b0087bc0bbc36d0f91fb
@@ -339,6 +341,8 @@ NeoBundle 'alpaca-tc/alpaca_complete',{
       \ }}
 NeoBundle 'othree/eregex.vim'
 NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'LeafCage/yankround.vim'
+NeoBundle 'mattn/gist-vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -365,7 +369,8 @@ NeoBundle 'EnhCommentify.vim'
 NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
 NeoBundle 'teol.vim'
-NeoBundle 'YankRing.vim'
+" NeoBundle 'YankRing.vim'
+NeoBundle 'dbext.vim'
 
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
@@ -430,6 +435,16 @@ nnoremap ,/ :M/
 nnoremap ,? :M?
 "" call Explore only E; to prevent ambiguous command with E2v
 command! E :Explore
+" }}}
+
+
+" gist.vim "{{{
+let g:gist_use_password_in_gitconfig = 1
+let g:gist_clip_command = 'pbcopy'
+let g:gist_open_browser_after_post = 1
+let g:gist_detect_filetype = 1
+let g:gist_show_privates = 1
+let g:gist_post_private = 1
 " }}}
 
 
@@ -593,9 +608,21 @@ nnoremap - :Switch<cr>
 " The prefix key.
 " nnoremap    [unite]   <Nop>
 " nmap    <Leader>f [unite]
+
+let g:unite_source_menu_menus = {
+      \   "gist" : {
+      \       "description" : "unite-gist-menu",
+      \       "command_candidates" : [
+      \           ["my gists",   "Gist -l mathemathiko"],
+      \           ["edit gist",  "Gist -e"],
+      \       ],
+      \   },
+      \}
  
 " unite.vim keymap
 " https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
+nnoremap Um :<C-u>Unite menu<CR>
+nnoremap Ug :<C-u>Unite menu:gist<CR>
 nnoremap [unite]u  :<C-u>Unite -no-split<Space>
 nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
 nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
@@ -615,6 +642,9 @@ let g:vinarise_enable_auto_detect = 1
 
 " vim-versions
 nnoremap <silent> ,uv :<C-u>UniteVersions status:!<CR>
+
+"qfreplace
+nnoremap ,ug :<C-u>Unite grep:./::
 
 " yank history
 let g:unite_source_history_yank_enable =1
@@ -668,5 +698,15 @@ nnoremap :vf :VimFiler
 
 
 "" YankRing {{{
-nmap ,y :YRShow<CR>
+" nmap ,y :YRShow<CR>
+"" }}}
+
+
+"" yankround {{{
+nmap p <Plug>(yankround-p)
+nmap P <Plug>(yankround-P)
+nmap gp <Plug>(yankround-gp)
+nmap gP <Plug>(yankround-gP)
+nmap <C-p> <Plug>(yankround-prev)
+nmap <C-n> <Plug>(yankround-next)
 "" }}}
