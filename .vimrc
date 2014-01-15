@@ -617,6 +617,12 @@ let g:unite_source_menu_menus = {
       \           ["edit gist",  "Gist -e"],
       \       ],
       \   },
+      \   "task" : {
+      \       "description" : "unite-task-menu",
+      \       "command_candidates" : [
+      \           ["my task",   "Tm"],
+      \       ],
+      \   },
       \}
  
 " unite.vim keymap
