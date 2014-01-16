@@ -358,6 +358,7 @@ NeoBundle 'mattn/gist-vim'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'kakkyz81/evervim'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
@@ -435,6 +436,13 @@ nnoremap ,/ :M/
 nnoremap ,? :M?
 "" call Explore only E; to prevent ambiguous command with E2v
 command! E :Explore
+" }}}
+
+
+" ever.vim "{{{
+" WARNING: devtoken must be written in .vimrc.
+let g:evervim_devtoken='S=s44:U=46453f:E=14af0f077aa:C=143993f4bae:P=1cd:A=en-devtoken:V=2:H=8eb7a4a07fadf0b615a2abd883e5b815'
+let g:evervim_usemarkdown=1
 " }}}
 
 
