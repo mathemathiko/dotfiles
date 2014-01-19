@@ -621,6 +621,12 @@ nnoremap - :Switch<cr>
 " nmap    <Leader>f [unite]
 
 let g:unite_source_menu_menus = {
+      \   "evernote" : {
+      \       "description" : "unite-evernote-menu",
+      \       "command_candidates" : [
+      \           ["notebook list",   "EvervimNotebookList"],
+      \       ],
+      \   },
       \   "gist" : {
       \       "description" : "unite-gist-menu",
       \       "command_candidates" : [
