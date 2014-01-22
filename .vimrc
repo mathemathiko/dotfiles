@@ -343,6 +343,8 @@ NeoBundle 'othree/eregex.vim'
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'mattn/gist-vim'
+" http://d.hatena.ne.jp/vimtaku/20121117/1353138802
+" http://4uing.logdown.com/posts/146220-vim-alignta
 NeoBundle 'h1mesuke/vim-alignta'
 
 " colorscheme
