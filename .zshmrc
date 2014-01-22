@@ -52,7 +52,7 @@ fi
 alias conso='rails console'
 alias mys='mysql -u root'
 alias cdr='cd Desktop/note/work/report/'
-alias cdr='cd Desktop/note/work/task/'
+alias cdt='cd Desktop/note/work/task/'
 
 export EDITOR=vim
 
