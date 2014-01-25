@@ -261,6 +261,8 @@ NeoBundleLazy 'Shougo/neosnippet', {
 \ }
 let s:bundle = neobundle#get('neosnippet')
 function! s:bundle.hooks.on_source(bundle)
+  NeoBundle 'Shougo/neosnippet-snippets'
+
   " Plugin key-mappings.
   imap <C-k>     <Plug>(neosnippet_expand_or_jump)
   smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -283,7 +285,7 @@ function! s:bundle.hooks.on_source(bundle)
   let g:neosnippet#enable_snipmate_compatibility = 1
 
   " Tell Neosnippet about the other snippets
-  let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+  let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/neosnippets'
   " autocmd BufEnter * if exists("b:rails_root") | NeoComplCacheSetFileType ruby.rails | endif
 endfunction
 unlet s:bundle
