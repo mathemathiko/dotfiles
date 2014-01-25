@@ -348,6 +348,7 @@ NeoBundle 'mattn/gist-vim'
 " http://d.hatena.ne.jp/vimtaku/20121117/1353138802
 " http://4uing.logdown.com/posts/146220-vim-alignta
 NeoBundle 'h1mesuke/vim-alignta'
+NeoBundle 'kakkyz81/evervim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -363,7 +364,7 @@ NeoBundle 'h1mesuke/vim-alignta'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'kakkyz81/evervim'
+NeoBundle 'hail2u/h2u_colorscheme'  " for printing
 
 " vim-scripts repos
 " XXX: OPTIMIZE
