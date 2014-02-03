@@ -103,7 +103,7 @@ set clipboard+=autoselect
 "" task list
 """"""""""""""""""""""
 
-command! Tm edit ~/Desktop/note/work/task/2014/201401.md
+command! Tm edit ~/Desktop/note/work/task/2014/201402.md
 
 
 """"""""""""""""""""""
