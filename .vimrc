@@ -349,6 +349,7 @@ NeoBundle 'mattn/gist-vim'
 " http://4uing.logdown.com/posts/146220-vim-alignta
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'kakkyz81/evervim'
+NeoBundle 'szw/vim-tags'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -621,6 +622,12 @@ nnoremap - :Switch<cr>
 "" }}}
 
 
+"" vim-tags {{{
+let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
+let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"
+"" }}}
+
+
 "" unite.vim {{{
 " The prefix key.
 " nnoremap    [unite]   <Nop>
@@ -637,6 +644,7 @@ let g:unite_source_menu_menus = {
       \       "description" : "unite-gist-menu",
       \       "command_candidates" : [
       \           ["my gists",   "Gist -l mathemathiko"],
+      \           ["create private gist",  "Gist -p"],
       \           ["edit gist",  "Gist -e"],
       \       ],
       \   },
