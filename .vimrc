@@ -58,8 +58,8 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme gruvbox
 " colorscheme bubblegum
 " colorscheme lucius
-" colorscheme solarized
-colorscheme monokai
+ colorscheme solarized
+" colorscheme monokai
 
 """"""""""""""""""""""
 "" search
