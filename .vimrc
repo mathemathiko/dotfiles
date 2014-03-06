@@ -58,7 +58,8 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme gruvbox
 " colorscheme bubblegum
 " colorscheme lucius
-colorscheme solarized
+" colorscheme solarized
+colorscheme monokai
 
 """"""""""""""""""""""
 "" search
@@ -366,6 +367,7 @@ NeoBundle 'szw/vim-tags'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'hail2u/h2u_colorscheme'  " for printing
+NeoBundle 'sickill/vim-monokai'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
