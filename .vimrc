@@ -351,6 +351,7 @@ NeoBundle 'mattn/gist-vim'
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'kakkyz81/evervim'
 NeoBundle 'szw/vim-tags'
+NeoBundle 'AndrewRadev/splitjoin.vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -598,6 +599,12 @@ nnoremap :sh :VimShellBufferDir
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
+"" }}}
+
+
+"" splitjoin {{{
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
 "" }}}
 
 
