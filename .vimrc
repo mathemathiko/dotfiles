@@ -58,7 +58,8 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme gruvbox
 " colorscheme bubblegum
 " colorscheme lucius
-colorscheme solarized
+ colorscheme solarized
+" colorscheme monokai
 
 """"""""""""""""""""""
 "" search
@@ -349,6 +350,8 @@ NeoBundle 'mattn/gist-vim'
 " http://4uing.logdown.com/posts/146220-vim-alignta
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'kakkyz81/evervim'
+NeoBundle 'szw/vim-tags'
+NeoBundle 'AndrewRadev/splitjoin.vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -365,6 +368,7 @@ NeoBundle 'kakkyz81/evervim'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'hail2u/h2u_colorscheme'  " for printing
+NeoBundle 'sickill/vim-monokai'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
@@ -598,6 +602,12 @@ set background=dark
 "" }}}
 
 
+"" splitjoin {{{
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
+"" }}}
+
+
 "" sunday.vim {{{
 " let g:sunday_pairs = [
 "   \   ['active', 'inactive'],
@@ -621,6 +631,12 @@ nnoremap - :Switch<cr>
 "" }}}
 
 
+"" vim-tags {{{
+let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
+let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"
+"" }}}
+
+
 "" unite.vim {{{
 " The prefix key.
 " nnoremap    [unite]   <Nop>
@@ -637,6 +653,7 @@ let g:unite_source_menu_menus = {
       \       "description" : "unite-gist-menu",
       \       "command_candidates" : [
       \           ["my gists",   "Gist -l mathemathiko"],
+      \           ["create private gist",  "Gist -p"],
       \           ["edit gist",  "Gist -e"],
       \       ],
       \   },
