@@ -58,7 +58,7 @@ nnoremap ,r :source ~/.vimrc<CR>
 " colorscheme gruvbox
 " colorscheme bubblegum
 " colorscheme lucius
- colorscheme solarized
+colorscheme solarized
 " colorscheme monokai
 
 """"""""""""""""""""""

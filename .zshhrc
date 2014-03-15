@@ -41,8 +41,9 @@ source $ZSH/oh-my-zsh.sh
 
 # fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH="$HOME/.rbenv/bin:$PATH"
-export RBENV_VERSION=1.9.3-p362
+export RBENV_VERSION=2.0.0-p0
 export EDITOR=vim
+export CC=/usr/bin/gcc
 
 eval "$(rbenv init -)"
 
