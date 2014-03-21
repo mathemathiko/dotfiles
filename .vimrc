@@ -313,7 +313,7 @@ NeoBundle 'mathemathiko/vim-rails'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 " XXX: OPTMIZE
-" NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hrsh7th/vim-versions'
 " XXX: OPTMIZE
 " NeoBundle 'tyru/open-browser.vim'
