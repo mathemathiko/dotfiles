@@ -286,7 +286,7 @@ function! s:bundle.hooks.on_source(bundle)
   let g:neosnippet#enable_snipmate_compatibility = 1
 
   " Tell Neosnippet about the other snippets
-  let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/neosnippets,~/.vim/snippets'
+  let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/neosnippets,~/.vim/snippets/snippets'
   " autocmd BufEnter * if exists("b:rails_root") | NeoComplCacheSetFileType ruby.rails | endif
 endfunction
 unlet s:bundle
@@ -493,7 +493,7 @@ let g:lightline = {
       \ 'colorscheme': 'default',
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename' ] ],
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename' ], [ 'buflist' ] ],
       \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'component_function': {
@@ -505,6 +505,7 @@ let g:lightline = {
       \   'filetype': 'MyFiletype',
       \   'fileencoding': 'MyFileencoding',
       \   'mode': 'MyMode',
+      \   'buflist': 'Mline_buflist',
       \ },
       \ 'separator': { 'left': '⮀', 'right': '⮂' },
       \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
@@ -546,6 +547,66 @@ endfunction
 function! MyMode()
   return winwidth('.') > 60 ? lightline#mode() : ''
 endfunction
+
+let g:mline_buflist_queue = []
+let g:mline_buflist_limit = 4
+let g:mline_buflist_exclution_pat = '^$\|.jax$\|vimfiler:\|\[unite\]\|tagbar'
+let g:mline_buflist_enable = 1
+command! Btoggle :let g:mline_buflist_enable = g:mline_buflist_enable ? 0 : 1 | :redrawstatus!
+ 
+function! Mline_buflist()
+    if &filetype =~? 'unite\|vimfiler\|tagbar' || !&modifiable || len(g:mline_buflist_queue) == 0 || g:mline_buflist_enable == 0
+        return ''
+    endif
+ 
+    let current_buf_nr = bufnr('%')
+    let buf_names_str = ''
+    let last = g:mline_buflist_queue[-1]
+    for i in g:mline_buflist_queue
+        let t = fnamemodify(i, ':t')
+        let n = bufnr(t)
+ 
+        if n != current_buf_nr
+            let buf_names_str .= printf('[%d]:%s' . (i == last ? '' : ' | '), n, t)
+        endif
+    endfor
+ 
+    return buf_names_str
+endfunction
+
+function! s:update_recent_buflist(file)
+    if a:file =~? g:mline_buflist_exclution_pat
+        " exclusion from queue
+        return
+    endif
+ 
+    if len(g:mline_buflist_queue) == 0
+        " init
+        for i in range(min( [ bufnr('$'), g:mline_buflist_limit + 1 ] ))
+            let t = bufname(i)
+            if bufexists(i) && t !~? g:mline_buflist_exclution_pat
+                call add(g:mline_buflist_queue, fnamemodify(t, ':p'))
+            endif
+        endfor
+    endif
+ 
+    " update exist buffer
+    let idx = index(g:mline_buflist_queue, a:file)
+    if 0 <= idx
+        call remove(g:mline_buflist_queue, idx)
+    endif
+ 
+    call insert(g:mline_buflist_queue, a:file)
+ 
+    if g:mline_buflist_limit + 1 < len(g:mline_buflist_queue)
+        call remove(g:mline_buflist_queue, -1)
+    endif
+endfunction
+ 
+augroup general
+    autocmd!
+    autocmd TabEnter,BufWinEnter * call s:update_recent_buflist(expand('<amatch>'))
+augroup END
 " }}}
 
 
