@@ -352,6 +352,7 @@ NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'kakkyz81/evervim'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
+NeoBundle 'osyo-manga/vim-over'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
