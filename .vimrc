@@ -688,6 +688,7 @@ nmap sk :SplitjoinJoin<cr>
 
 
 "" vim-submode {{{
+" http://haya14busa.com/improve-x-with-vim-submode/
 function! s:my_x()
   undojoin
   normal! "_x
