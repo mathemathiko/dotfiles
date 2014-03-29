@@ -357,6 +357,7 @@ NeoBundle 'kakkyz81/evervim'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'kana/vim-submode'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -683,6 +684,17 @@ set background=dark
 "" splitjoin {{{
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
+"" }}}
+
+
+"" vim-submode {{{
+function! s:my_x()
+  undojoin
+  normal! "_x
+endfunction
+nnoremap <silent> <Plug>(my-x) :<C-u>call <SID>my_x()<CR>
+call submode#enter_with('my_x', 'n', '', 'x', '"_x')
+call submode#map('my_x', 'n', 'r', 'x', '<Plug>(my-x)')
 "" }}}
 
 
