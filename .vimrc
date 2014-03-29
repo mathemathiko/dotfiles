@@ -295,8 +295,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
-" XXX: OPTIMIZE
-" NeoBundle 'Lokaltog/vim-easymotion'
+" XXX: NOT OPTIMIZE
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
@@ -334,7 +334,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'scrooloose/syntastic'
 " XXX: OPTIMIZE
 " NeoBundle 'nishigori/vim-sunday'
-NeoBundle 'rhysd/clever-f.vim'
+" NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'mattn/benchvimrc-vim'
 NeoBundle 'alpaca-tc/alpaca_complete',{
       \ 'depends' : ['tpope/vim-rails', 'Shougo/neocomplete'],
@@ -430,9 +430,21 @@ filetype plugin indent on     " Required!
 
 
 " clever-f.vim "{{{
-let g:clever_f_smart_case = 1
-let g:clever_f_fix_key_direction = 1
-let g:clever_f_chars_match_any_signs = ';'
+" let g:clever_f_smart_case = 1
+" let g:clever_f_fix_key_direction = 1
+" let g:clever_f_chars_match_any_signs = ';'
+" }}}
+
+
+" easymotion "{{{
+" http://haya14busa.com/mastering-vim-easymotion/
+let g:EasyMotion_do_mapping = 0
+nmap s <Plug>(easymotion-s2)
+xmap s <Plug>(easymotion-s2)
+map f <Plug>(easymotion-fl)
+map t <Plug>(easymotion-tl)
+map F <Plug>(easymotion-Fl)
+map T <Plug>(easymotion-Tl)
 " }}}
 
 
