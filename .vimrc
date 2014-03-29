@@ -12,6 +12,11 @@
 """"""""""""""""""""""
 
 set number
+" http://d.hatena.ne.jp/osyo-manga/20140303/1393854617
+augroup numberwidth
+    autocmd!
+    autocmd BufEnter,WinEnter,BufWinEnter * let &l:numberwidth = len(line("$")) + 2
+augroup END
 set whichwrap=b,s,h,l,>,[,]
 set ai
 set cursorline
@@ -105,7 +110,6 @@ set clipboard+=autoselect
 """"""""""""""""""""""
 
 command! Tm edit ~/Desktop/note/work/task/201403.md
-
 
 """"""""""""""""""""""
 "" key binding
