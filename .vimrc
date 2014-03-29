@@ -358,6 +358,7 @@ NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'kana/vim-submode'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
