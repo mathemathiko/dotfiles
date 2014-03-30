@@ -317,7 +317,7 @@ NeoBundle 'mathemathiko/vim-rails'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-qfreplace'
 " XXX: OPTMIZE
-NeoBundle 'mattn/emmet-vim'
+" NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hrsh7th/vim-versions'
 " XXX: OPTMIZE
 " NeoBundle 'tyru/open-browser.vim'
@@ -359,6 +359,7 @@ NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'yonchu/accelerated-smooth-scroll'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -411,6 +412,13 @@ filetype plugin indent on     " Required!
 """"""""""""""""""""""
 "" plugin
 """"""""""""""""""""""
+
+" accelerated-smooth-scroll "{{{
+" http://yonchu.hatenablog.com/entry/2013/05/16/204727
+let g:ac_smooth_scroll_du_sleep_time_msec = 5
+let g:ac_smooth_scroll_fb_sleep_time_msec = 5
+" }}}
+
 
 " vim-anzu "{{{
 " nmap n <Plug>(anzu-n)
