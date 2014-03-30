@@ -55,6 +55,15 @@ alias ls='gls --color=auto'
 alias ll='ls -la'
 alias mys='mysql -u root -p'
 
+#### cdd
+autoload -Uz compinit
+compinit
+. ~/cdd/cdd
+
+chpwd() {
+    _cdd_chpwd
+}
+
 #### MacVim
 # http://qiita.com/skkzsh@github/items/3ef20fb73e849eca5278
 case "`uname`" in
