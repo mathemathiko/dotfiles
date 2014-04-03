@@ -109,7 +109,7 @@ set clipboard+=autoselect
 "" task list
 """"""""""""""""""""""
 
-command! Tm edit ~/Desktop/note/work/task/201403.md
+command! Tm edit ~/Desktop/note/work/task/201404.md
 
 """"""""""""""""""""""
 "" key binding
@@ -300,7 +300,7 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 " XXX: NOT OPTIMIZE
-NeoBundle 'Lokaltog/vim-easymotion'
+" NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
