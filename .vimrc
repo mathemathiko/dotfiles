@@ -357,7 +357,7 @@ NeoBundle 'kakkyz81/evervim'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'osyo-manga/vim-over'
-NeoBundle 'kana/vim-submode'
+" NeoBundle 'kana/vim-submode'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'joeytwiddle/sexy_scroller.vim'
 
