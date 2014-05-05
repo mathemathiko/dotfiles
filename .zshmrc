@@ -37,6 +37,15 @@ source $ZSH/oh-my-zsh.sh
 PATH=/usr/local/bin:$PATH
 export PATH
 
+#### cdd
+autoload -Uz compinit
+compinit
+. ~/cdd/cdd
+
+chpwd() {
+    _cdd_chpwd
+}
+
 #### split zshrc file
 # http://d.hatena.ne.jp/dgdg/20071127/1196179056
 ZSHHOME="${HOME}/.zsh"

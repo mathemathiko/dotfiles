@@ -109,7 +109,7 @@ set clipboard+=autoselect
 "" task list
 """"""""""""""""""""""
 
-command! Tm edit ~/Desktop/note/work/task/201403.md
+command! Tm edit ~/Desktop/note/work/task/201404.md
 
 """"""""""""""""""""""
 "" key binding
@@ -308,7 +308,7 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 " XXX: NOT OPTIMIZE
-NeoBundle 'Lokaltog/vim-easymotion'
+" NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
@@ -365,9 +365,9 @@ NeoBundle 'kakkyz81/evervim'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'osyo-manga/vim-over'
-NeoBundle 'kana/vim-submode'
+" NeoBundle 'kana/vim-submode'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'yonchu/accelerated-smooth-scroll'
+NeoBundle 'joeytwiddle/sexy_scroller.vim'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
@@ -420,13 +420,6 @@ filetype plugin indent on     " Required!
 """"""""""""""""""""""
 "" plugin
 """"""""""""""""""""""
-
-" accelerated-smooth-scroll "{{{
-" http://yonchu.hatenablog.com/entry/2013/05/16/204727
-let g:ac_smooth_scroll_du_sleep_time_msec = 5
-let g:ac_smooth_scroll_fb_sleep_time_msec = 5
-" }}}
-
 
 " vim-anzu "{{{
 " nmap n <Plug>(anzu-n)
@@ -684,6 +677,13 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 "" }}}
 
 
+" sexy_scroller.vim "{{{
+let g:SexyScroller_ScrollTime = 10
+let g:SexyScroller_MaxTime = 500
+let g:SexyScroller_EasingStyle = 2
+"" }}}
+
+
 "" vim-shell {{{
 nnoremap :sh :VimShellBufferDir
 "" }}}
@@ -712,13 +712,13 @@ nmap sk :SplitjoinJoin<cr>
 
 "" vim-submode {{{
 " http://haya14busa.com/improve-x-with-vim-submode/
-function! s:my_x()
-  undojoin
-  normal! "_x
-endfunction
-nnoremap <silent> <Plug>(my-x) :<C-u>call <SID>my_x()<CR>
-call submode#enter_with('my_x', 'n', '', 'x', '"_x')
-call submode#map('my_x', 'n', 'r', 'x', '<Plug>(my-x)')
+" function! s:my_x()
+"   undojoin
+"   normal! "_x
+" endfunction
+" nnoremap <silent> <Plug>(my-x) :<C-u>call <SID>my_x()<CR>
+" call submode#enter_with('my_x', 'n', '', 'x', '"_x')
+" call submode#map('my_x', 'n', 'r', 'x', '<Plug>(my-x)')
 "" }}}
 
 
