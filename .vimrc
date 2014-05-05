@@ -258,7 +258,15 @@ NeoBundleLazy 'sjl/gundo.vim', {
 " XXX: OPTIMIZE
 " NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kg8m/svn-diff.vim'
-NeoBundle 'pangloss/vim-javascript'
+" NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'jiangmiao/simple-javascript-indenter'
+NeoBundleLazy 'jelera/vim-javascript-syntax', {
+            \   'autoload': {
+            \     'filetypes': ['javascript'],
+            \     'functions': ['JavaScriptFold'],
+            \   },
+            \ },
 NeoBundle 'kg8m/moin.vim'
 NeoBundle 'ujihisa/neco-look'
 NeoBundleLazy 'Shougo/neosnippet', {
@@ -679,6 +687,12 @@ let g:rubytest_cmd_testcase = "ruby %p -n %c"
 "" vim-shell {{{
 nnoremap :sh :VimShellBufferDir
 "" }}}
+
+
+" simple-javascript-indenter "{{{
+let g:SimpleJsIndenter_BriefMode = 2
+let g:SimpleJsIndenter_CaseIndentLevel = -1
+" }}}
 
 
 "" solarized {{{
