@@ -1,6 +1,7 @@
 #### commands
-alias ls='gls --color=auto'
+# alias ls='gls --color=auto'
 alias ll='ls -la'
+alias rm='rm -i'
 
 ## if cd, then ls
 function chpwd() { ls -F }
