@@ -81,7 +81,12 @@ set incsearch
 "" folding
 """"""""""""""""""""""
 
-set foldlevel=100
+" set foldmethod=syntax
+" set foldlevel=1
+
+autocmd FileType ruby :set foldmethod=indent
+autocmd FileType ruby :set foldlevel=1
+autocmd FileType ruby :set foldnestmax=2
 
 
 """"""""""""""""""""""
@@ -368,6 +373,7 @@ NeoBundle 'osyo-manga/vim-over'
 " NeoBundle 'kana/vim-submode'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'joeytwiddle/sexy_scroller.vim'
+" NeoBundle 't9md/vim-foldtext'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
