@@ -84,9 +84,9 @@ set incsearch
 " set foldmethod=syntax
 " set foldlevel=1
 
-autocmd FileType ruby :set foldmethod=indent
-autocmd FileType ruby :set foldlevel=1
-autocmd FileType ruby :set foldnestmax=2
+" autocmd FileType ruby :set foldmethod=indent
+" autocmd FileType ruby :set foldlevel=1
+" autocmd FileType ruby :set foldnestmax=2
 
 
 """"""""""""""""""""""
