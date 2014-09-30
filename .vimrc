@@ -114,7 +114,7 @@ set clipboard+=autoselect
 "" task list
 """"""""""""""""""""""
 
-command! Tm edit ~/Desktop/note/work/task/201407.md
+command! Tm edit ~/Desktop/note/work/task/201410.md
 
 """"""""""""""""""""""
 "" key binding
