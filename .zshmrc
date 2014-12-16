@@ -63,6 +63,10 @@ alias mys='mysql -u root'
 alias cdr='cd Desktop/note/work/report/'
 alias cdt='cd Desktop/note/work/task/'
 
+alias adc_start='/Applications/VMware\ Fusion.app/Contents/Library/vmrun start Documents/ADCounter/dev-adc.vmwarevm/dev-adc.vmx'
+alias win_start='/Applications/VMware\ Fusion.app/Contents/Library/vmrun start Documents/Virtual\ Machines.localized/Windows\ 7\ x64.vmwarevm/Windows\ 7\ x64.vmx'
+
+
 export EDITOR=vim
 
 setopt nonomatch
