@@ -60,7 +60,6 @@ fi
 
 alias conso='rails console'
 alias mys='mysql -u root'
-alias cdr='cd Desktop/note/work/report/'
 alias cdt='cd Desktop/note/work/task/'
 
 alias adc_start='/Applications/VMware\ Fusion.app/Contents/Library/vmrun start Documents/ADCounter/dev-adc.vmwarevm/dev-adc.vmx'
@@ -83,3 +82,8 @@ case "`uname`" in
 
     *) ;;
 esac
+
+#### growlnotify
+# http://qiita.com/maueki/items/e463531f673a348c4d95
+# http://qiita.com/rohinomiya/items/24ac87234c980b68c555
+source ~/.zsh/zsh-behind-window-notify/behind-window-notify.zsh
