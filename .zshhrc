@@ -92,4 +92,4 @@ fi
 
 #### z.sh
 # http://mfks17.hateblo.jp/entry/20130126/1359176957
-`brew --prefix`/etc/profile.d/z.sh
+# `brew --prefix`/etc/profile.d/z.sh
