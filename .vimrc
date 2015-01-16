@@ -81,7 +81,7 @@ set incsearch
 "" folding
 """"""""""""""""""""""
 
-" set foldmethod=syntax
+set foldmethod=manual
 " set foldlevel=1
 
 " autocmd FileType ruby :set foldmethod=indent
@@ -114,7 +114,7 @@ set clipboard+=autoselect
 "" task list
 """"""""""""""""""""""
 
-command! Tm edit ~/Desktop/note/work/task/201411.md
+command! Tm edit ~/Desktop/note/work/task/201501.md
 
 """"""""""""""""""""""
 "" key binding
