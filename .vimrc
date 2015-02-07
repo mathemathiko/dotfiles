@@ -208,15 +208,15 @@ endfunction
 unlet s:bundle
 " NeoBundle 'Shougo/unite.vim'
 
-NeoBundleLazy 'Shougo/vimshell', {
-\   'autoload' : { 'commands' : [ 'VimShellBufferDir' ] },
-\   'depends': [ 'Shougo/vimproc' ],
-\ }
-let s:bundle = neobundle#get('vimshell')
-function! s:bundle.hooks.on_source(bundle)
-  " write vimshell settings here.
-endfunction
-unlet s:bundle
+" NeoBundleLazy 'Shougo/vimshell', {
+" \   'autoload' : { 'commands' : [ 'VimShellBufferDir' ] },
+" \   'depends': [ 'Shougo/vimproc' ],
+" \ }
+" let s:bundle = neobundle#get('vimshell')
+" function! s:bundle.hooks.on_source(bundle)
+"   " write vimshell settings here.
+" endfunction
+" unlet s:bundle
 " NeoBundle 'Shougo/vimshell.vim'
 
 " http://blog.basyura.org/entry/2013/08/17/154700
@@ -382,6 +382,9 @@ NeoBundle 'osyo-manga/vim-over'
 " NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'joeytwiddle/sexy_scroller.vim'
 " NeoBundle 't9md/vim-foldtext'
+" XXX: https://github.com/justinmk/vim-sneak#usage-default
+" XXX: interference with other plugins
+" NeoBundle 'justinmk/vim-sneak'
 
 " colorscheme
 " NeoBundle 'tomasr/molokai'
