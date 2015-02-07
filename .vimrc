@@ -350,7 +350,11 @@ NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
 " XXX: NOT OPTMIZE
-NeoBundle 'tsaleh/vim-matchit'
+" NeoBundle 'tsaleh/vim-matchit'
+if !exists('loaded_matchit')
+  " enable matchit.vim
+  runtime macros/matchit.vim
+endif
 " XXX: OPTMIZE
 " NeoBundle 'ecomba/vim-ruby-refactoring'
 " NeoBundle 'tell-k/vim-browsereload-mac'
