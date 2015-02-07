@@ -349,7 +349,7 @@ NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
 " XXX: OPTMIZE
-" NeoBundle 'tsaleh/vim-matchit'
+NeoBundle 'tsaleh/vim-matchit'
 " XXX: OPTMIZE
 " NeoBundle 'ecomba/vim-ruby-refactoring'
 " NeoBundle 'tell-k/vim-browsereload-mac'
