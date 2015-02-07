@@ -272,8 +272,10 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {
             \     'functions': ['JavaScriptFold'],
             \   },
             \ },
+" XXX: trac wiki syntax highlight
+" XXX: http://qiita.com/wonderful_panda/items/449833fa90cc5b5c13c0
 NeoBundle 'kg8m/moin.vim'
-NeoBundle 'ujihisa/neco-look'
+" NeoBundle 'ujihisa/neco-look'
 NeoBundleLazy 'Shougo/neosnippet', {
 \   'autoload' : { 'insert': 1 }
 \ }
@@ -309,11 +311,12 @@ endfunction
 unlet s:bundle
 
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-haml'
+" NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 " XXX: NOT OPTIMIZE
 " NeoBundle 'Lokaltog/vim-easymotion'
+" XXX: https://github.com/rstacruz/sparkup#examples
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
 NeoBundle 'hail2u/vim-css3-syntax'
@@ -327,19 +330,21 @@ NeoBundle 'mathemathiko/vim-rails'
 " NeoBundle 'erikw/tmux-powerline'
 " NeoBundle 'milkbikis/powerline-shell'
 " NeoBundle 'jeremyFreeAgent/oh-my-zsh-powerline-theme'
+" XXX: http://blog.glidenote.com/blog/2013/02/28/the-silver-searcher-better-than-ack/
 NeoBundle 'rking/ag.vim'
+" XXX: http://archiva.jp/web/tool/vim_grep2.html
 NeoBundle 'thinca/vim-qfreplace'
 " XXX: OPTMIZE
 " NeoBundle 'mattn/emmet-vim'
-NeoBundle 'hrsh7th/vim-versions'
+" NeoBundle 'hrsh7th/vim-versions'
 " XXX: OPTMIZE
 " NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'mattn/webapi-vim'
+" NeoBundle 'mattn/webapi-vim'
 NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'tpope/vim-endwise'
 " XXX: OPTMIZE
 " NeoBundle 'osyo-manga/vim-anzu'
-NeoBundle 'kana/vim-smartchr'
+" NeoBundle 'kana/vim-smartchr'
 " XXX: OPTMIZE
 " NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
@@ -353,25 +358,28 @@ NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'nishigori/vim-sunday'
 " NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'mattn/benchvimrc-vim'
-NeoBundle 'alpaca-tc/alpaca_complete',{
-      \ 'depends' : ['tpope/vim-rails', 'Shougo/neocomplete'],
-      \ 'build' : {
-      \     'mac' : 'gem install alpaca_complete',
-      \     'unix' : 'gem install alpaca_complete',
-      \ }}
+" NeoBundle 'alpaca-tc/alpaca_complete',{
+"       \ 'depends' : ['tpope/vim-rails', 'Shougo/neocomplete'],
+"       \ 'build' : {
+"       \     'mac' : 'gem install alpaca_complete',
+"       \     'unix' : 'gem install alpaca_complete',
+"       \ }}
+" XXX: http://blog.ruedap.com/2011/02/02/vim-ruby-regexp-plugin-eregex
 NeoBundle 'othree/eregex.vim'
+" XXX: https://github.com/AndrewRadev/switch.vim#builtins
 NeoBundle 'AndrewRadev/switch.vim'
-NeoBundle 'LeafCage/yankround.vim'
-NeoBundle 'mattn/gist-vim'
-" http://d.hatena.ne.jp/vimtaku/20121117/1353138802
-" http://4uing.logdown.com/posts/146220-vim-alignta
+" NeoBundle 'LeafCage/yankround.vim'
+" NeoBundle 'mattn/gist-vim'
+" XXX: http://d.hatena.ne.jp/vimtaku/20121117/1353138802
+" XXX: http://4uing.logdown.com/posts/146220-vim-alignta
 NeoBundle 'h1mesuke/vim-alignta'
-NeoBundle 'kakkyz81/evervim'
-NeoBundle 'szw/vim-tags'
+" NeoBundle 'kakkyz81/evervim'
+" NeoBundle 'szw/vim-tags'
 NeoBundle 'AndrewRadev/splitjoin.vim'
+" https://github.com/osyo-manga/vim-over#screencapture
 NeoBundle 'osyo-manga/vim-over'
 " NeoBundle 'kana/vim-submode'
-NeoBundle 'nathanaelkane/vim-indent-guides'
+" NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'joeytwiddle/sexy_scroller.vim'
 " NeoBundle 't9md/vim-foldtext'
 
@@ -389,8 +397,9 @@ NeoBundle 'joeytwiddle/sexy_scroller.vim'
 " NeoBundle 'baskerville/bubblegum'
 " NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'hail2u/h2u_colorscheme'  " for printing
-NeoBundle 'sickill/vim-monokai'
+" XXX: for printing
+" NeoBundle 'hail2u/h2u_colorscheme'
+" NeoBundle 'sickill/vim-monokai'
 
 " vim-scripts repos
 " XXX: OPTIMIZE
@@ -399,14 +408,17 @@ NeoBundle 'sickill/vim-monokai'
 " NeoBundle 'FuzzyFinder'
 NeoBundle 'EnhCommentify.vim'
 " NeoBundle 'taglist.vim'
-NeoBundle 'sudo.vim'
+" XXX: http://nanasi.jp/articles/vim/sudo_vim.html
+" NeoBundle 'sudo.vim'
 " NeoBundle 'buftabs'
-NeoBundle 'teol.vim'
+" XXX: http://nanasi.jp/articles/vim/teol_vim.html
+" NeoBundle 'teol.vim'
 " NeoBundle 'YankRing.vim'
-NeoBundle 'dbext.vim'
+" XXX: http://qiita.com/0829/items/ce92a752bf832a06bcf2
+" NeoBundle 'dbext.vim'
 
 " Non github repos
-NeoBundle 'git://git.wincent.com/command-t.git'
+" NeoBundle 'git://git.wincent.com/command-t.git'
 
 " Non git repos
 " XXX: OPTIMIZE
@@ -460,13 +472,13 @@ filetype plugin indent on     " Required!
 
 " easymotion "{{{
 " http://haya14busa.com/mastering-vim-easymotion/
-let g:EasyMotion_do_mapping = 0
-nmap s <Plug>(easymotion-s2)
-xmap s <Plug>(easymotion-s2)
-map f <Plug>(easymotion-fl)
-map t <Plug>(easymotion-tl)
-map F <Plug>(easymotion-Fl)
-map T <Plug>(easymotion-Tl)
+" let g:EasyMotion_do_mapping = 0
+" nmap s <Plug>(easymotion-s2)
+" xmap s <Plug>(easymotion-s2)
+" map f <Plug>(easymotion-fl)
+" map t <Plug>(easymotion-tl)
+" map F <Plug>(easymotion-Fl)
+" map T <Plug>(easymotion-Tl)
 " }}}
 
 
@@ -488,18 +500,18 @@ command! E :Explore
 " http://pythonhosted.org/Markdown/install.html
 
 " WARNING: devtoken must be written in .vimrc.
-let g:evervim_devtoken='S=s44:U=46453f:E=14af0f077aa:C=143993f4bae:P=1cd:A=en-devtoken:V=2:H=8eb7a4a07fadf0b615a2abd883e5b815'
-let g:evervim_usemarkdown=1
+" let g:evervim_devtoken='S=s44:U=46453f:E=14af0f077aa:C=143993f4bae:P=1cd:A=en-devtoken:V=2:H=8eb7a4a07fadf0b615a2abd883e5b815'
+" let g:evervim_usemarkdown=1
 " }}}
 
 
 " gist.vim "{{{
-let g:gist_use_password_in_gitconfig = 1
-let g:gist_clip_command = 'pbcopy'
-let g:gist_open_browser_after_post = 1
-let g:gist_detect_filetype = 1
-let g:gist_show_privates = 1
-let g:gist_post_private = 1
+" let g:gist_use_password_in_gitconfig = 1
+" let g:gist_clip_command = 'pbcopy'
+" let g:gist_open_browser_after_post = 1
+" let g:gist_detect_filetype = 1
+" let g:gist_show_privates = 1
+" let g:gist_post_private = 1
 " }}}
 
 
@@ -517,7 +529,7 @@ let g:gist_post_private = 1
 
 
 " gundo "{{{
-nmap U :<C-u>GundoToggle<CR>
+" nmap U :<C-u>GundoToggle<CR>
 " }}}
 
 
@@ -691,7 +703,7 @@ let g:SexyScroller_EasingStyle = 2
 
 
 "" vim-shell {{{
-nnoremap :sh :VimShellBufferDir
+" nnoremap :sh :VimShellBufferDir
 "" }}}
 
 
@@ -751,8 +763,8 @@ nnoremap - :Switch<cr>
 
 
 "" vim-tags {{{
-let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
-let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"
+" let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECTORY} 2>/dev/null"
+" let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R {OPTIONS} `bundle show --paths` 2>/dev/null"
 "" }}}
 
 
@@ -858,7 +870,7 @@ aug END
 
 
 "" vimfiler {{{
-nnoremap :vf :VimFiler
+" nnoremap :vf :VimFiler
 "" }}}
 
 
@@ -868,10 +880,10 @@ nnoremap :vf :VimFiler
 
 
 "" yankround {{{
-nmap p <Plug>(yankround-p)
-nmap P <Plug>(yankround-P)
-nmap gp <Plug>(yankround-gp)
-nmap gP <Plug>(yankround-gP)
-nmap <C-p> <Plug>(yankround-prev)
-nmap <C-n> <Plug>(yankround-next)
+" nmap p <Plug>(yankround-p)
+" nmap P <Plug>(yankround-P)
+" nmap gp <Plug>(yankround-gp)
+" nmap gP <Plug>(yankround-gP)
+" nmap <C-p> <Plug>(yankround-prev)
+" nmap <C-n> <Plug>(yankround-next)
 "" }}}
