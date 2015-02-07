@@ -315,7 +315,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'kg8m/vim-rubytest'
 NeoBundle 'plasticboy/vim-markdown'
 " XXX: NOT OPTIMIZE
-" NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Lokaltog/vim-easymotion'
 " XXX: https://github.com/rstacruz/sparkup#examples
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'hail2u/vim-css-syntax'
@@ -475,13 +475,13 @@ filetype plugin indent on     " Required!
 
 " easymotion "{{{
 " http://haya14busa.com/mastering-vim-easymotion/
-" let g:EasyMotion_do_mapping = 0
-" nmap s <Plug>(easymotion-s2)
-" xmap s <Plug>(easymotion-s2)
-" map f <Plug>(easymotion-fl)
-" map t <Plug>(easymotion-tl)
-" map F <Plug>(easymotion-Fl)
-" map T <Plug>(easymotion-Tl)
+let g:EasyMotion_do_mapping = 0
+nmap s <Plug>(easymotion-s2)
+xmap s <Plug>(easymotion-s2)
+map f <Plug>(easymotion-fl)
+map t <Plug>(easymotion-tl)
+map F <Plug>(easymotion-Fl)
+map T <Plug>(easymotion-Tl)
 " }}}
 
 
