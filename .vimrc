@@ -310,6 +310,7 @@ function! s:bundle.hooks.on_source(bundle)
 endfunction
 unlet s:bundle
 
+" XXX: http://vimblog.hatenablog.com/entry/vim_plugin_surround_vim
 NeoBundle 'tpope/vim-surround'
 " NeoBundle 'tpope/vim-haml'
 NeoBundle 'kg8m/vim-rubytest'
@@ -348,7 +349,7 @@ NeoBundle 'itchyny/lightline.vim'
 " XXX: OPTMIZE
 " NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'vim-ruby/vim-ruby'
-" XXX: OPTMIZE
+" XXX: NOT OPTMIZE
 NeoBundle 'tsaleh/vim-matchit'
 " XXX: OPTMIZE
 " NeoBundle 'ecomba/vim-ruby-refactoring'
