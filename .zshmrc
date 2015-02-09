@@ -66,7 +66,8 @@ alias adc_start='/Applications/VMware\ Fusion.app/Contents/Library/vmrun start D
 alias win_start='/Applications/VMware\ Fusion.app/Contents/Library/vmrun start Documents/Virtual\ Machines.localized/Windows\ 7\ x64.vmwarevm/Windows\ 7\ x64.vmx'
 
 
-export EDITOR=vim
+export EDITOR='vim'
+export SHELL='zsh'
 
 setopt nonomatch
 
