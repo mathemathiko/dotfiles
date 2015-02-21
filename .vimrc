@@ -272,6 +272,7 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {
             \     'functions': ['JavaScriptFold'],
             \   },
             \ },
+NeoBundle 'mxw/vim-jsx'
 " XXX: trac wiki syntax highlight
 " XXX: http://qiita.com/wonderful_panda/items/449833fa90cc5b5c13c0
 NeoBundle 'kg8m/moin.vim'
@@ -538,6 +539,11 @@ command! E :Explore
 
 " gundo "{{{
 " nmap U :<C-u>GundoToggle<CR>
+" }}}
+
+
+" jsx "{{{
+let g:jsx_ext_required = 0
 " }}}
 
 
